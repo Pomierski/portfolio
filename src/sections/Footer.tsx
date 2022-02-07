@@ -10,7 +10,6 @@ const Wrapper = styled.footer`
   text-align: center;
   @media (min-width: ${(props) => props.theme.screenSize.sm}) {
     grid-column: 1 / 3;
-    grid-row: 6;
   }
 `;
 

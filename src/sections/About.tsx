@@ -8,7 +8,7 @@ import Timeline from "../components/Timeline";
 const currentYear = new Date().getFullYear();
 
 const About = () => (
-  <Section id="about" gridRow="2" gridCol="1 / 3">
+  <Section id="about" gridCol="1 / 3">
     <Container>
       <div>
         <Heading>O mnie</Heading>

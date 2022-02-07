@@ -25,6 +25,7 @@ export interface Theme {
     xl: string;
   };
   horizontalHeightLimit: string;
+  navbarHeight: string;
 }
 
 const theme: Readonly<Theme> = {
@@ -54,6 +55,7 @@ const theme: Readonly<Theme> = {
     xl: "1200px",
   },
   horizontalHeightLimit: "400px",
+  navbarHeight: "4rem",
 };
 
 export default theme;

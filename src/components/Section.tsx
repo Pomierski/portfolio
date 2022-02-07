@@ -2,7 +2,7 @@ import styled from "styled-components";
 
 interface PropTypes {
   gridCol: string;
-  gridRow: string;
+  gridRow?: string;
 }
 
 const Section = styled.section<PropTypes>`
@@ -10,7 +10,7 @@ const Section = styled.section<PropTypes>`
 
   @media (min-width: ${(props) => props.theme.screenSize.sm}) {
     grid-column: ${(props) => props.gridCol};
-    grid-row: ${(props) => props.gridRow};
+    grid-row: ${(props) => props.gridRow || "unset"};
   }
 `;
 

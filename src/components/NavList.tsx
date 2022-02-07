@@ -32,7 +32,7 @@ const Navlist = () => (
   <List>
     <ListItem>
       <Link to="skills" smooth offset={-10}>
-        Umiejętności
+        Technologie
       </Link>
     </ListItem>
     <ListItem>

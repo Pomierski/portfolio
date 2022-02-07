@@ -8,12 +8,7 @@ const Wrapper = styled.div`
       props.theme.screenSize.sm}) and (min-height: ${(props) =>
       props.theme.horizontalHeightLimit}) {
     display: flex;
-    position: absolute;
-    top: 4rem;
-    left: 5px;
-  }
-  @media (max-height: 1000px) {
-    top: 1rem;
+    height: ${(props) => props.theme.navbarHeight};
   }
 `;
 

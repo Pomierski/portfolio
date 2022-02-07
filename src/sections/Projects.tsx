@@ -83,7 +83,7 @@ const cards = [
 const CardsWrapper = styled.div`
   display: none;
   @media (min-width: ${(props) =>
-      props.theme.screenSize.md}) and (min-height: ${(props) =>
+      props.theme.screenSize.sm}) and (min-height: ${(props) =>
       props.theme.horizontalHeightLimit}) {
     margin-top: 2rem;
     display: grid;
@@ -94,14 +94,14 @@ const CardsWrapper = styled.div`
 
 const StyledCarousel = styled(Carousel)`
   @media (min-width: ${(props) =>
-      props.theme.screenSize.md}) and (min-height: ${(props) =>
+      props.theme.screenSize.sm}) and (min-height: ${(props) =>
       props.theme.horizontalHeightLimit}) {
     display: none;
   }
 `;
 
 const Projects = () => (
-  <Section id="projects" gridRow="4" gridCol="1 / 3">
+  <Section id="projects" gridCol="1 / 3">
     <Heading>Projekty</Heading>
     <CardsWrapper>
       {cards.map(

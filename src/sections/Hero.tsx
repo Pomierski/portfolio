@@ -70,7 +70,7 @@ const HeroImg = styled.div`
   display: none;
 
   @media (min-width: ${(props) =>
-      props.theme.screenSize.md}) and (min-height: ${(props) =>
+      props.theme.screenSize.sm}) and (min-height: ${(props) =>
       props.theme.horizontalHeightLimit}) {
     display: flex;
     width: 80%;
@@ -102,7 +102,7 @@ const Wrapper = styled.div`
       props.theme.screenSize.sm}) and (min-height: ${(props) =>
       props.theme.horizontalHeightLimit}) {
     margin-top: 0;
-    height: 100vh;
+    height: calc(100vh - ${(props) => props.theme.navbarHeight});
     grid-template-columns: repeat(2, 1fr);
   }
   @media (min-width: ${(props) => props.theme.screenSize.lg}) {
@@ -111,7 +111,6 @@ const Wrapper = styled.div`
     grid-template-columns: 460px 460px;
     grid-template-rows: 1fr min-content;
     grid-column-gap: 2rem;
-    height: 100vh;
   }
   @media (max-height: ${(props) => props.theme.horizontalHeightLimit}) {
     margin-top: 4.5rem;

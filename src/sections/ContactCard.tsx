@@ -8,9 +8,8 @@ const Wrapper = styled.div`
   color: ${(props) => props.theme.color.accent};
   border: 1px solid ${(props) => props.theme.color.accent};
   margin: 2.5rem 0 5rem 0;
-  @media (min-width: ${(props) => props.theme.screenSize.md}) {
+  @media (min-width: ${(props) => props.theme.screenSize.sm}) {
     grid-column: 1 / 3;
-    grid-row: 5;
   }
 `;
 

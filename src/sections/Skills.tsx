@@ -33,7 +33,7 @@ const StyledText = styled(Text)`
 `;
 
 const Skills = () => (
-  <Section id="skills" gridRow="3" gridCol="1 / 3">
+  <Section id="skills" gridCol="1 / 3">
     <Heading>Technologie</Heading>
     <Container>
       <div>
