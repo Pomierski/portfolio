@@ -166,7 +166,12 @@ const Hero = () => (
         >
           Linkedin
         </Button>
-        <Button icon={<AiOutlinePaperClip />}>CV</Button>
+        <Button
+          href="https://drive.google.com/file/d/1q-RiwWz9x69y7MqRaFvTyI6sonOepKKL/view?usp=sharing"
+          icon={<AiOutlinePaperClip />}
+        >
+          CV
+        </Button>
       </ButtonsWrapper>
     </Content>
     <HeroImg>
