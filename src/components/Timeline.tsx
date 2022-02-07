@@ -1,3 +1,4 @@
+import React from "react";
 import styled from "styled-components";
 import Text from "./Text";
 
@@ -59,8 +60,8 @@ const StyledText = styled(Text)`
 const Timeline = ({ positions }: PropTypes) => {
   return (
     <Wrapper>
-      {positions.map((el) => (
-        <>
+      {positions.map((el, index) => (
+        <React.Fragment key={index}>
           <TimelineWrapper>
             <Point />
             <Line />
@@ -69,7 +70,7 @@ const Timeline = ({ positions }: PropTypes) => {
             <Title fontSize="sm">{el.title}</Title>
             <StyledText color="secondary">{el.description}</StyledText>
           </TextWrapper>
-        </>
+        </React.Fragment>
       ))}
     </Wrapper>
   );
