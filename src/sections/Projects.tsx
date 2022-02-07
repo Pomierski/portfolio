@@ -15,7 +15,7 @@ const cards = [
     subTitle: "Strona wizytówka",
     previewImg: projectImage.marbond,
     icons: [icons.adobeXD, icons.react],
-    content: "Strona wizytkówka zaprojektowana i napisana dla firmy Marbond.",
+    content: `Strona wizytkówka zaprojektowana i napisana dla firmy Marbond.`,
     repoUrl: "https://github.com/Pomierski/Marbond",
     liveUrl: "https://marbond.pl/",
   },
@@ -24,8 +24,8 @@ const cards = [
     subTitle: "Chrome Extension",
     previewImg: projectImage.myAnimeReminder,
     icons: [icons.react],
-    content:
-      "Rozszerzenie do przeglądarek opartych na Chromium. Przy wykorzystaniu JikanAPI i SyncStorage przypomina o premierach odcinków anime.",
+    content: `Rozszerzenie do przeglądarek opartych na Chromium. Przy wykorzystaniu JikanAPI i 
+    SyncStorage przypomina o premierach odcinków anime.`,
     repoUrl: "https://github.com/Pomierski/MyAnimeReminder",
     liveUrl:
       "https://chrome.google.com/webstore/detail/myanimereminder/ncdghgolehhmfedjdbicgdbedefglbfk",
@@ -35,8 +35,8 @@ const cards = [
     subTitle: "Projekt fullstack",
     previewImg: projectImage.yayNay,
     icons: [icons.mysql, icons.react, icons.ts, icons.nodejs],
-    content:
-      "Mały projekt fullstack. Strona do tworzenia ankiet z dwoma opcjami - yay lub nay. Technologie wykorzystane do Back-endu (REST Api) to NodeJS z TypeScript oraz MySQL. Front-end napisany w React.",
+    content: `Projekt fullstack. Strona do tworzenia ankiet z dwoma opcjami - yay lub nay. 
+    Technologie wykorzystane do Back-endu (REST Api) to NodeJS z TypeScript oraz MySQL. Front-end napisany w React.`,
     repoUrl: "https://github.com/Pomierski/yaynay",
   },
   {
@@ -44,8 +44,8 @@ const cards = [
     subTitle: "Strona wizytówka",
     previewImg: projectImage.silver,
     icons: [icons.adobeXD, icons.sass, icons.html5],
-    content:
-      "Szablon strony WWW, zaprojektowany własnoręcznie. Napisany w HTMLu z użyciem SCSS. Do spakowania projektu wykorzystany został Parcel.",
+    content: `Szablon strony WWW. Stworzony przy użyciu własnego projektu. Napisany w HTMLu z użyciem SCSS. 
+    Jako bundler został wykorzystany Parcel.`,
     repoUrl: "https://github.com/Pomierski/website-template",
     liveUrl: "https://pomierski.github.io/website-template",
   },
@@ -54,8 +54,8 @@ const cards = [
     subTitle: "NodeJS CLI",
     previewImg: projectImage.organize,
     icons: [icons.nodejs],
-    content:
-      "Organize to NodeJS CLI, które przenosi pliki do utworzonych folderów zgodnie z przeznaczeniem pliku. Posiada opcje ignorowania plików, przeniesienia tylko wybranego rodzaju plików itp.",
+    content: `Organize to NodeJS CLI, służące do organizowania plików w osobne foldery. 
+    Posiada opcje ignorowania plików, przeniesienia tylko wybranego rodzaju plików i inne`,
     repoUrl: "https://github.com/Pomierski/organize",
     liveUrl: "https://github.com/Pomierski/organize",
   },
@@ -64,8 +64,8 @@ const cards = [
     subTitle: "React app",
     previewImg: projectImage.suggestMeAnime,
     icons: [icons.react, icons.redux],
-    content:
-      "SuggestMeAnime to mój pierwszy większy projekt w React. Wykorzystuje JikanAPI do wizualizacji wyników wyszukiwania.",
+    content: `SuggestMeAnime to graficzny interfejs dla JikanAPI, pozwalający wyszukiwać pozycję dostepnę w API. 
+    Napisane przy użyciu React & Redux`,
     repoUrl: "https://github.com/Pomierski/SuggestMeAnime",
     liveUrl: "https://pomierski.github.io/SuggestMeAnime",
   },
@@ -74,8 +74,7 @@ const cards = [
     subTitle: "Gatsby blog",
     previewImg: projectImage.pomierskiBlog,
     icons: [icons.gatsby, icons.graphql],
-    content:
-      "Blog napisany przy użyciu Gatsby.js oraz Headless CMS (GraphCMS).",
+    content: `Blog napisany przy użyciu Gatsby.js oraz Headless CMS (GraphCMS).`,
     repoUrl: "https://github.com/Pomierski/marcin-pomierski-wiersze",
     liveUrl: "http://www.pomierski.pl/",
   },

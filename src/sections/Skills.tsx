@@ -34,13 +34,13 @@ const StyledText = styled(Text)`
 
 const Skills = () => (
   <Section id="skills" gridRow="3" gridCol="1 / 3">
-    <Heading>Umiejętności</Heading>
+    <Heading>Technologie</Heading>
     <Container>
       <div>
         <StyledText color="secondary">
-          Przy tych technologiach spędziłem najwięcej czasu i przy ich użyciu
-          napisałem najwięcej linijek kodu. Pisząc kod czuję się pewnie i zawsze
-          szukam najlepszych rozwiązań.
+          W tych technologiach się specjalizuję. Poświęciłem im najwięcej czasu
+          i napisałem w nich setki linijek kodu. Czuję się pewnie przy
+          korzystaniu z nich i zawsze szukam najlepszych rozwiązań.
         </StyledText>
         <PanelWrapper>
           <Panel icon={icons.react} title="React" />
@@ -53,9 +53,8 @@ const Skills = () => (
       </div>
       <div>
         <StyledText color="secondary">
-          Technologie których nadal się uczę. Potrafię wykorzystać je w
-          projektach, jednak chciałbym spędzić przy nich więcej czasu aby nabrać
-          doświadczenia i pewności.
+          Technologie z których korzystam w zależności od projektu, lub nadal
+          się uczę.
         </StyledText>
         <PanelWrapper>
           <Panel icon={icons.angular} title="Angular" />
