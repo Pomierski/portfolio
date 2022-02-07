@@ -138,7 +138,7 @@ const Hero = () => (
             front-end developerem. Na co dzień posługuję się biblioteką React,
             ale Angular nie jest mi straszny. 😎 Uwielbiam tworzyć aplikacje
             internetowe oraz poznawać nowe technologie. Badam również świat
-            backendu 🛠️ oraz projektowania UI/UX 👨‍🎨
+            backendu oraz projektowania UI/UX.
           </StyledP>
           <Info>
             <FlexCenter margin=".5rem 0">
