@@ -11,7 +11,6 @@ const Wrapper = styled.div`
   width: 5rem;
   background: ${(props) => props.theme.color.darkBg};
   display: inline-flex;
-  justify-content: center;
   align-items: center;
   padding: 1rem;
   flex-direction: column;
@@ -27,26 +26,37 @@ const Wrapper = styled.div`
     border-bottom: 2px solid ${(props) => props.theme.color.accent};
   }
 
-  & > img {
-    width: 24px;
-    min-height: 24px;
-  }
-
   @media (min-width: ${(props) => props.theme.screenSize.sm}) {
     height: 100%;
     width: 100%;
+  }
+`;
 
+const IconWrapper = styled.div`
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: 1.5rem;
+  width: 1.5rem;
+
+  & > img {
+    min-height: 1.5rem;
+  }
+  @media (min-width: ${(props) => props.theme.screenSize.sm}) {
+    width: 2rem;
+    min-height: 3rem;
     & > img {
-      width: 36px;
-      min-height: 51px;
-      max-height: 51px;
+      min-height: 3rem;
     }
   }
 `;
 
 const Panel = ({ icon, title }: PropTypes) => (
   <Wrapper>
-    <img src={icon} alt={title} width="36px" height="51px" />
+    <IconWrapper>
+      <img src={icon} alt={title} width="36px" height="51px" />
+    </IconWrapper>
     <p>{title}</p>
   </Wrapper>
 );
