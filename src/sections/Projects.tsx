@@ -54,7 +54,7 @@ const cards = [
     previewImg: projectImage.organize,
     icons: [icons.nodejs],
     content: `Organize to NodeJS CLI, służące do organizowania plików w osobne foldery. 
-    Posiada opcje ignorowania plików, przeniesienia tylko wybranego rodzaju plików i inne`,
+    Posiada rózne opcje m.in. ignorowanie plików, przeniesienie tylko wybranego rodzaju plików`,
     repoUrl: "https://github.com/Pomierski/organize",
     liveUrl: "https://github.com/Pomierski/organize",
   },
