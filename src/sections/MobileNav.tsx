@@ -13,6 +13,7 @@ const Wrapper = styled.div`
   width: 100%;
   display: flex;
   padding-top: 2rem;
+  z-index: 2;
   @media (min-width: ${(props) =>
       props.theme.screenSize.sm}) and (min-height: ${(props) =>
       props.theme.horizontalHeightLimit}) {
