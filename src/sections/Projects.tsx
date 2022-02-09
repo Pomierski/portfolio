@@ -7,7 +7,6 @@ import Heading from "../components/Heading";
 import Section from "../components/Section";
 import icons from "../components/Utility/Icons";
 import projectImage from "../components/Utility/ProjectImage";
-import "../styles/carousel.scss";
 
 const cards = [
   {
@@ -126,6 +125,7 @@ const Projects = () => (
       showStatus={false}
       swipeable={true}
       showThumbs={false}
+      showArrows={false}
     >
       {cards.map(
         ({

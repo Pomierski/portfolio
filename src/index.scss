@@ -74,3 +74,12 @@ img {
 ::-webkit-scrollbar-thumb {
   background-color: #ffc400;
 }
+
+
+//React Responsive Carousel
+
+.carousel.carousel {
+  &-slider {
+    padding-bottom: 2.5rem;
+  }
+}
