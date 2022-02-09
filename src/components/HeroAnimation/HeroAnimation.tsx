@@ -2,8 +2,8 @@ import { motion } from "framer-motion";
 import React from "react";
 import styled, { useTheme } from "styled-components";
 import { Theme } from "../../styles/theme";
-import "./animatedHeroImg.scss";
 import { CodeSnippets } from "./CodeSnippets";
+import "./heroAnimation.scss";
 
 const Wrapper = styled.div`
   width: 100%;
@@ -94,7 +94,7 @@ const transitions = [
   },
 ];
 
-const AnimatedHeroImg = () => {
+const HeroAnimation = () => {
   const { color } = useTheme() as Theme;
   const accentColor = color.accent;
   const darkAccentColor = color.darkAccent;
@@ -324,4 +324,4 @@ const AnimatedHeroImg = () => {
   );
 };
 
-export default AnimatedHeroImg;
+export default HeroAnimation;

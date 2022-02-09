@@ -7,14 +7,14 @@ import {
 import { FiMail } from "react-icons/fi";
 import { IoLocationSharp } from "react-icons/io5";
 import styled from "styled-components";
-import AnimatedHeroImg from "../components/AnimatedHeroImg/AnimatedHeroImg";
 import Button from "../components/Button";
 import FlexCenter from "../components/FlexCenter";
-import ScrollDownArrow from "../components/Hero/ScrollDownArrow";
-import VertialTextBanner from "../components/Hero/VerticalTextBanner";
+import AnimatedHeroImg from "../components/HeroAnimation/HeroAnimation";
 import MainHeading from "../components/MainHeading";
+import ScrollDownArrow from "../components/ScrollDownArrow";
 import StyledIcon from "../components/StyledIcon";
 import Text from "../components/Text";
+import VertialTextBanner from "../components/VerticalTextBanner";
 
 const ContentWrapper = styled.div`
   display: flex;
