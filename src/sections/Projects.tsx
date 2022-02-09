@@ -126,6 +126,7 @@ const Projects = () => (
       swipeable={true}
       showThumbs={false}
       showArrows={false}
+      interval={4000}
     >
       {cards.map(
         ({
