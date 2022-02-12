@@ -166,7 +166,7 @@ const Hero = () => (
           Linkedin
         </Button>
         <Button
-          href="https://drive.google.com/file/d/1MeB6lRueudIZxINkVTAwflKZYXnB66Dy/view?usp=sharing"
+          href="https://drive.google.com/file/d/1lNPaHDIU5MzaPPu4hn0xLz8AlbAVMaIl/view?usp=sharing"
           icon={<AiOutlinePaperClip />}
         >
           CV
