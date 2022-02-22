@@ -1,34 +1,6 @@
-export interface Theme {
-  color: {
-    main: string;
-    secondary: string;
-    accent: string;
-    darkAccent: string;
-    darkAccentBg: string;
-    bg: string;
-    darkBg: string;
-  };
-  fontSize: {
-    default: string;
-    xs: string;
-    sm: string;
-    md: string;
-    lg: string;
-    xl: string;
-  };
-  sectionGap: string;
-  screenSize: {
-    gFold: string;
-    sm: string;
-    md: string;
-    lg: string;
-    xl: string;
-  };
-  horizontalHeightLimit: string;
-  navbarHeight: string;
-}
+export type Theme = Readonly<typeof theme>;
 
-const theme: Readonly<Theme> = {
+const theme = {
   color: {
     main: "#fff",
     secondary: "#BDBDBD",
