@@ -54,7 +54,7 @@ const cards = [
     previewImg: projectImage.organize,
     icons: [icons.nodejs],
     content: `Organize to NodeJS CLI, służące do organizowania plików w osobne foldery. 
-    Posiada rózne opcje m.in. ignorowanie plików, przeniesienie tylko wybranego rodzaju plików`,
+    Posiada różne opcje m.in. ignorowanie plików, przeniesienie tylko wybranego rodzaju plików`,
     repoUrl: "https://github.com/Pomierski/organize",
     liveUrl: "https://github.com/Pomierski/organize",
   },
@@ -63,7 +63,7 @@ const cards = [
     subTitle: "React app",
     previewImg: projectImage.suggestMeAnime,
     icons: [icons.react, icons.redux],
-    content: `SuggestMeAnime to graficzny interfejs dla JikanAPI, pozwalający wyszukiwać pozycję dostepnę w API. 
+    content: `SuggestMeAnime to graficzny interfejs dla JikanAPI, pozwalający wyszukiwać pozycję dostepne w API. 
     Napisane przy użyciu React & Redux`,
     repoUrl: "https://github.com/Pomierski/SuggestMeAnime",
     liveUrl: "https://pomierski.github.io/SuggestMeAnime",
