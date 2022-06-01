@@ -3,7 +3,7 @@ import Container from "../components/Container";
 import Heading from "../components/Heading/Heading";
 import Panel from "../components/Panel";
 import Section from "../components/Section";
-import Text from "../components/Text";
+import Text from "../components/Text/Text";
 import icons from "../components/Utility/Icons";
 
 const PanelWrapper = styled.div`

@@ -2,7 +2,7 @@ import React from "react";
 import Container from "../components/Container";
 import Heading from "../components/Heading/Heading";
 import Section from "../components/Section";
-import Text from "../components/Text";
+import Text from "../components/Text/Text";
 import Timeline from "../components/Timeline";
 
 const currentYear = new Date().getFullYear();

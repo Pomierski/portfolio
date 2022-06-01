@@ -13,7 +13,7 @@ import AnimatedHeroImg from "../components/HeroAnimation/HeroAnimation";
 import MainHeading from "../components/MainHeading";
 import ScrollDownArrow from "../components/ScrollDownArrow";
 import StyledIcon from "../components/StyledIcon";
-import Text from "../components/Text";
+import Text from "../components/Text/Text";
 import VertialTextBanner from "../components/VerticalTextBanner";
 
 const ContentWrapper = styled.div`

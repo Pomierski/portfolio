@@ -2,7 +2,7 @@ import React from "react";
 import { AiFillGithub, AiFillLinkedin } from "react-icons/ai";
 import styled from "styled-components";
 import StyledIcon from "../components/StyledIcon";
-import Text from "../components/Text";
+import Text from "../components/Text/Text";
 
 const Wrapper = styled.footer`
   width: fit-content;
