@@ -1,6 +1,6 @@
 import styled from "styled-components";
 import Container from "../components/Container";
-import Heading from "../components/Heading";
+import Heading from "../components/Heading/Heading";
 import Panel from "../components/Panel";
 import Section from "../components/Section";
 import Text from "../components/Text";

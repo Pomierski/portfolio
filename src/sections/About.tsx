@@ -1,6 +1,6 @@
 import React from "react";
 import Container from "../components/Container";
-import Heading from "../components/Heading";
+import Heading from "../components/Heading/Heading";
 import Section from "../components/Section";
 import Text from "../components/Text";
 import Timeline from "../components/Timeline";

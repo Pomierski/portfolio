@@ -3,7 +3,7 @@ import { Carousel } from "react-responsive-carousel";
 import "react-responsive-carousel/lib/styles/carousel.min.css";
 import styled from "styled-components";
 import Card from "../components/Card";
-import Heading from "../components/Heading";
+import Heading from "../components/Heading/Heading";
 import Section from "../components/Section";
 import icons from "../components/Utility/Icons";
 import projectImage from "../components/Utility/ProjectImage";
