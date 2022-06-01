@@ -19,4 +19,10 @@ describe("< Text />", () => {
       fontSize: theme.fontSize.xl,
     });
   });
+  it("should have different padding if padding prop is provided", () => {
+    render(<Text padding="1rem">Text</Text>);
+    expect(screen.getByText("Text")).toHaveStyle({
+      padding: "1rem",
+    });
+  });
 });
