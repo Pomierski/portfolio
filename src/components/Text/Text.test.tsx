@@ -3,7 +3,7 @@ import { render, screen } from "../../tests/test-utils";
 import Text from "./Text";
 
 describe("< Text />", () => {
-  it("should render property", () => {
+  it("should render correctly", () => {
     render(<Text>Text</Text>);
     expect(screen.getByText("Text")).toBeInTheDocument();
   });
