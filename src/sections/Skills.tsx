@@ -46,6 +46,8 @@ const Skills = () => (
           <Panel icon={icons.react} title="React" />
           <Panel icon={icons.ts} title="Typescript" />
           <Panel icon={icons.js} title="Javascript" />
+          <Panel icon={icons.jest} title="Jest" />
+          <Panel icon={icons.rtl} title="RTL" />
           <Panel icon={icons.html5} title="HTML5" />
           <Panel icon={icons.css} title="CSS3" />
           <Panel icon={icons.sass} title="Sass" />

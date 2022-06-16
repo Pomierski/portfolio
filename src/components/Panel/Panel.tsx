@@ -1,5 +1,5 @@
-import React from "react";
 import styled from "styled-components";
+import Text from "../Text/Text";
 
 interface PropTypes {
   icon: string;
@@ -57,8 +57,7 @@ const Panel = ({ icon, title }: PropTypes) => (
     <IconWrapper>
       <img src={icon} alt={title} width="36px" height="51px" />
     </IconWrapper>
-    <p>{title}</p>
+    <Text textAlign="center">{title}</Text>
   </Wrapper>
 );
-
 export default Panel;
