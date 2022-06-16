@@ -1,12 +1,12 @@
 import styled, { css, useTheme } from "styled-components";
-import { Theme } from "../styles/theme";
-import StyledIcon from "./StyledIcon";
+import { Theme } from "../../styles/theme";
+import StyledIcon from "../StyledIcon";
 
 interface PropTypes {
   margin?: string;
   fill?: boolean;
   center?: boolean;
-  disable?: boolean | string;
+  disable?: boolean;
   icon?: React.ReactNode;
   href?: string;
   children?: React.ReactNode;
@@ -81,6 +81,7 @@ const Button = ({
       {children}
       {icon ? (
         <StyledIcon
+          data-testId="button-icon"
           color={disable ? theme.color.secondary : theme.color.accent}
           margin="0 0 0 .25rem"
         >

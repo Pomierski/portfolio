@@ -2,7 +2,7 @@ import React from "react";
 import { AiFillGithub } from "react-icons/ai";
 import { MdFindInPage } from "react-icons/md";
 import styled from "styled-components";
-import Button from "./Button";
+import Button from "./Button/Button";
 
 interface PropTypes {
   previewImg: string;

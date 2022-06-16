@@ -7,7 +7,7 @@ import {
 import { FiMail } from "react-icons/fi";
 import { IoLocationSharp } from "react-icons/io5";
 import styled from "styled-components";
-import Button from "../components/Button";
+import Button from "../components/Button/Button";
 import FlexCenter from "../components/FlexCenter";
 import AnimatedHeroImg from "../components/HeroAnimation/HeroAnimation";
 import MainHeading from "../components/MainHeading";
