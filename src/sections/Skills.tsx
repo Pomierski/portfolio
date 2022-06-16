@@ -4,7 +4,7 @@ import Heading from "../components/Heading/Heading";
 import Panel from "../components/Panel/Panel";
 import Section from "../components/Section";
 import Text from "../components/Text/Text";
-import icons from "../components/Utility/Icons";
+import icons from "../utility/icons";
 
 const PanelWrapper = styled.div`
   padding: 1rem 0 1rem 0;
