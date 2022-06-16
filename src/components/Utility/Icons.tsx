@@ -3,6 +3,7 @@ import angular from "../../assets/logos/angular.svg";
 import css from "../../assets/logos/css.svg";
 import figma from "../../assets/logos/figma.svg";
 import gatsby from "../../assets/logos/gatsby.svg";
+import git from "../../assets/logos/git.svg";
 import go from "../../assets/logos/go.svg";
 import graphql from "../../assets/logos/graphql.svg";
 import html5 from "../../assets/logos/html5.svg";
@@ -38,6 +39,7 @@ const icons = {
   mongodb,
   jest,
   rtl,
+  git,
 };
 
 export default icons;
