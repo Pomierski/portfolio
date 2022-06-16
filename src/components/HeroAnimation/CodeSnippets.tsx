@@ -84,8 +84,8 @@ export const CodeSnippets = ({ transitions }: PropTypes) => {
             style={darcula}
             customStyle={{
               background: "none",
-              padding: "0 !imporant",
-              margin: "0 !important",
+              padding: "0",
+              margin: "0",
             }}
             PreTag={Pre}
           >
