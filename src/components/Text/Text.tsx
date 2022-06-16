@@ -6,6 +6,7 @@ interface PropTypes {
   fontSize?: keyof Theme["fontSize"];
   padding?: string;
   margin?: string;
+  textAlign?: string;
 }
 
 const Text = styled.p<PropTypes>`
@@ -17,6 +18,7 @@ const Text = styled.p<PropTypes>`
       : props.theme.fontSize.default};
   padding: ${(props) => props.padding || "0"};
   margin: ${(props) => props.margin || "0.5rem 0"};
+  text-align: ${(props) => props.textAlign || "left"};
 `;
 
 export default Text;
