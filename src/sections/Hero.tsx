@@ -1,4 +1,3 @@
-import React from "react";
 import {
   AiFillGithub,
   AiFillLinkedin,
@@ -133,11 +132,10 @@ const Hero = () => (
             Piotr <br /> Pomierski
           </MainHeading>
           <StyledP>
-            Cześć! 👋 Aspiruję do zostania <br />
-            front-end developerem. Na co dzień posługuję się biblioteką React,
-            ale Angular nie jest mi straszny. 😎 Uwielbiam tworzyć aplikacje
-            internetowe oraz poznawać nowe technologie. Badam również świat
-            backendu oraz projektowania UI/UX.
+            Cześć! 👋 Jestem junior front-end developerem. W swoich projektach
+            wykorzystuję głównie biblioteką React. Uwielbiam tworzyć aplikacje i
+            strony internetowe oraz poznawać nowe technologie. Badam również
+            świat backendu oraz projektowania UI/UX.
           </StyledP>
           <Info>
             <FlexCenter margin=".5rem 0">

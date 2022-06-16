@@ -1,4 +1,3 @@
-import React from "react";
 import Container from "../components/Container";
 import Heading from "../components/Heading/Heading";
 import Section from "../components/Section";
@@ -13,12 +12,13 @@ const About = () => (
       <div>
         <Heading>O mnie</Heading>
         <Text>
-          Mam 22 lata. Interesuję się programowaniem od {currentYear - 2016}
-          lat. Od początku 2021 próbuję swoich sił w świecie komercyjnym.
-          Specjalizuje się we frontendzie, gdyż tworzenie świetnie wygladających
-          stron sprawia mi najwięcej satysfakcji. Lubię również pogłębiać wiedzę
-          ze świata backendu, ponieważ pozwala mi to na rozszerzanie
-          funkcjonalości moich projektów :)
+          Interesuje się programowaniem od {currentYear - 2016} lat.
+          Specjalizuje się we frontendzie. Głównie w tworzeniu logiki oraz
+          stylowaniu UI. Tworzenie świetnie wygladających stron i aplikacji
+          sprawia mi najwięcej satysfakcji. Zawsze dążę do pisania coraz
+          lepszego kodu i poznawania nowych technologii. Lubię również pogłębiać
+          wiedzę ze świata backendu, ponieważ pozwala mi to na rozszerzanie
+          funkcjonalości moich projektów.
         </Text>
       </div>
       <div>
@@ -26,7 +26,7 @@ const About = () => (
         <Timeline
           positions={[
             {
-              title: "Junior frontend developer",
+              title: "Junior frontend developer (React)",
               description: "kwi 2022 - obecnie",
               company: "Shiji Poland",
             },
