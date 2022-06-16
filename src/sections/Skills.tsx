@@ -62,10 +62,12 @@ const Skills = () => (
           <Panel icon={icons.webpack} title="Webpack" />
           <Panel icon={icons.nodejs} title="NodeJS" />
           <Panel icon={icons.redux} title="Redux" />
-          <Panel icon={icons.mysql} title="MySQL" />
+          <Panel icon={icons.docker} title="Docker" />
           <Panel icon={icons.mongodb} title="MongoDB" />
           <Panel icon={icons.graphql} title="GraphQL" />
           <Panel icon={icons.go} title="GO" />
+          <Panel icon={icons.mysql} title="MySQL" />
+          <Panel icon={icons.babel} title="Babel" />
         </PanelWrapper>
       </div>
     </Container>

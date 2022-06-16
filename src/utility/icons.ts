@@ -1,6 +1,8 @@
 import adobeXD from "../assets/logos/adobexd.svg";
 import angular from "../assets/logos/angular.svg";
+import babel from "../assets/logos/babel.svg";
 import css from "../assets/logos/css.svg";
+import docker from "../assets/logos/docker.svg";
 import figma from "../assets/logos/figma.svg";
 import gatsby from "../assets/logos/gatsby.svg";
 import git from "../assets/logos/git.svg";
@@ -40,6 +42,8 @@ const icons = {
   jest,
   rtl,
   git,
+  docker,
+  babel,
 };
 
 export default icons;
