@@ -13,8 +13,8 @@ const About = () => (
       <div>
         <Heading>O mnie</Heading>
         <Text>
-          Mam 21 lat. Interesuję się programowaniem od {currentYear - 2016} lat.
-          Od początku 2021 próbuję swoich sił w świecie komercyjnym.
+          Mam 22 lata. Interesuję się programowaniem od {currentYear - 2016}
+          lat. Od początku 2021 próbuję swoich sił w świecie komercyjnym.
           Specjalizuje się we frontendzie, gdyż tworzenie świetnie wygladających
           stron sprawia mi najwięcej satysfakcji. Lubię również pogłębiać wiedzę
           ze świata backendu, ponieważ pozwala mi to na rozszerzanie
@@ -26,12 +26,19 @@ const About = () => (
         <Timeline
           positions={[
             {
+              title: "Junior frontend developer",
+              description: "kwi 2022 - obecnie",
+              company: "Shiji Poland",
+            },
+            {
               title: "Junior frontend developer (Angular)",
-              description: "wrz 2021 - gru 2021 · 4 mieś.",
+              description: "wrz 2021 - gru 2021 · 4 mies.",
+              company: "Tom&Co",
             },
             {
               title: "Staż Junior frontend developer (Angular)",
-              description: "sie 2021 - wrz 2021 · 1 mieś.",
+              description: "sie 2021 - wrz 2021 · 1 mies.",
+              company: "Tom&Co",
             },
           ]}
         />

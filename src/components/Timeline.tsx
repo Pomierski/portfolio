@@ -5,6 +5,7 @@ import Text from "./Text/Text";
 interface Position {
   title: string;
   description: string;
+  company: string;
 }
 
 interface PropTypes {
@@ -68,6 +69,9 @@ const Timeline = ({ positions }: PropTypes) => {
           </TimelineWrapper>
           <TextWrapper>
             <Title fontSize="sm">{el.title}</Title>
+            <StyledText fontSize="xs" margin="0">
+              {el.company}
+            </StyledText>
             <StyledText color="secondary">{el.description}</StyledText>
           </TextWrapper>
         </React.Fragment>
