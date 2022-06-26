@@ -1,4 +1,3 @@
-import React from "react";
 import styled from "styled-components";
 
 interface PropTypes {
@@ -19,6 +18,7 @@ const Wrapper = styled.div`
   -webkit-text-stroke-color: ${(props) => props.theme.color.accent};
   word-break: break-all;
   line-height: ${(props) => props.theme.fontSize.lg};
+  user-select: none;
 
   @media (min-width: ${(props) =>
       props.theme.screenSize.sm}) and (min-height: ${(props) =>

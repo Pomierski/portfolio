@@ -4,7 +4,7 @@ import Heading from "../components/Heading/Heading";
 import Panel from "../components/Panel/Panel";
 import Section from "../components/Section";
 import Text from "../components/Text/Text";
-import icons from "../components/Utility/Icons";
+import icons from "../utility/icons";
 
 const PanelWrapper = styled.div`
   padding: 1rem 0 1rem 0;
@@ -26,46 +26,48 @@ const PanelWrapper = styled.div`
   }
 `;
 
-const StyledText = styled(Text)`
-  @media (min-width: ${(props) => props.theme.screenSize.sm}) {
-    min-height: 5rem;
-  }
-`;
-
 const Skills = () => (
   <Section id="skills" gridCol="1 / 3">
     <Heading>Technologie</Heading>
+    <Container margin="0 auto 2rem auto">
+      <div>
+        Wykorzystując doświadczenie w wymienionych technologiach staram tworzyć
+        najlepsze i zoptymalizowane rozwiązania. Potrafię szybko analizować kod
+        napisany w oparciu o te technologię i odnaleźć się w złozonych
+        projektach.
+      </div>
+    </Container>
     <Container>
       <div>
-        <StyledText color="secondary">
-          W tych technologiach się specjalizuję. Poświęciłem im najwięcej czasu
-          i napisałem w nich setki linijek kodu. Czuję się pewnie przy
-          korzystaniu z nich i zawsze szukam najlepszych rozwiązań.
-        </StyledText>
+        <Text color="secondary">Technologiach w których się specjalizuję.</Text>
         <PanelWrapper>
           <Panel icon={icons.react} title="React" />
           <Panel icon={icons.ts} title="Typescript" />
           <Panel icon={icons.js} title="Javascript" />
+          <Panel icon={icons.jest} title="Jest" />
+          <Panel icon={icons.rtl} title="RTL" />
           <Panel icon={icons.html5} title="HTML5" />
           <Panel icon={icons.css} title="CSS3" />
           <Panel icon={icons.sass} title="Sass" />
+          <Panel icon={icons.git} title="Git" />
         </PanelWrapper>
       </div>
       <div>
-        <StyledText color="secondary">
-          Technologie z których korzystam w zależności od projektu, lub nadal
-          się uczę.
-        </StyledText>
+        <Text color="secondary">
+          Technologie które wykorzystuję w zalezności od projektu.
+        </Text>
         <PanelWrapper>
           <Panel icon={icons.angular} title="Angular" />
           <Panel icon={icons.gatsby} title="Gatsby" />
           <Panel icon={icons.webpack} title="Webpack" />
           <Panel icon={icons.nodejs} title="NodeJS" />
           <Panel icon={icons.redux} title="Redux" />
-          <Panel icon={icons.mysql} title="MySQL" />
+          <Panel icon={icons.docker} title="Docker" />
           <Panel icon={icons.mongodb} title="MongoDB" />
           <Panel icon={icons.graphql} title="GraphQL" />
           <Panel icon={icons.go} title="GO" />
+          <Panel icon={icons.mysql} title="MySQL" />
+          <Panel icon={icons.babel} title="Babel" />
         </PanelWrapper>
       </div>
     </Container>

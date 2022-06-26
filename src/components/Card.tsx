@@ -3,6 +3,7 @@ import { AiFillGithub } from "react-icons/ai";
 import { MdFindInPage } from "react-icons/md";
 import styled from "styled-components";
 import Button from "./Button/Button";
+import Text from "./Text/Text";
 
 interface PropTypes {
   previewImg: string;
@@ -44,12 +45,8 @@ const Heading = styled.h3`
   color: #fff;
 `;
 
-const SubTitle = styled.p`
-  margin: 0;
-  color: ${(props) => props.theme.color.accent};
+const SubTitle = styled(Text)`
   text-transform: uppercase;
-  font-weight: 300;
-  font-size: 0.8rem;
 `;
 
 const IconsWrapper = styled.div`
@@ -106,7 +103,9 @@ const Card = ({
     </Preview>
     <Content>
       <header>
-        <SubTitle>{subTitle}</SubTitle>
+        <SubTitle color="accent" margin="0" fontSize="xs">
+          {subTitle}
+        </SubTitle>
         <Heading>{title}</Heading>
       </header>
       <p>{children}</p>

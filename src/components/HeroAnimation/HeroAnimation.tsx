@@ -1,5 +1,4 @@
 import { motion } from "framer-motion";
-import React from "react";
 import styled, { useTheme } from "styled-components";
 import { Theme } from "../../styles/theme";
 import { CodeSnippets } from "./CodeSnippets";

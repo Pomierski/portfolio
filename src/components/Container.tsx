@@ -1,8 +1,12 @@
 import styled from "styled-components";
 
-const Container = styled.div`
+interface Props {
+  margin?: string;
+}
+
+const Container = styled.div<Props>`
   width: 21.5rem;
-  margin: 0 auto;
+  margin: ${(props) => props.margin || "0 auto"};
 
   @media (min-width: ${(props) =>
       props.theme.screenSize.sm}) and (min-height: ${(props) =>
