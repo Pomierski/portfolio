@@ -1,8 +1,8 @@
-import Container from "../components/Container";
-import Heading from "../components/Heading/Heading";
-import Section from "../components/Section";
-import Text from "../components/Text/Text";
-import Timeline from "../components/Timeline";
+import Container from "../../components/Container";
+import Heading from "../../components/Heading/Heading";
+import Section from "../../components/Section";
+import Text from "../../components/Text/Text";
+import Timeline from "../../components/Timeline";
 
 const currentYear = new Date().getFullYear();
 
@@ -13,7 +13,7 @@ const About = () => (
         <Heading>O mnie</Heading>
         <Text>
           Interesuje się programowaniem od {currentYear - 2016} lat.
-          Specjalizuje się we frontendzie. Głównie w tworzeniu logiki oraz
+          Specjalizuje się we front-endzie. Głównie w tworzeniu logiki oraz
           stylowaniu UI. Tworzenie świetnie wygladających stron i aplikacji
           sprawia mi najwięcej satysfakcji. Zawsze dążę do pisania coraz
           lepszego kodu i poznawania nowych technologii. Lubię również pogłębiać

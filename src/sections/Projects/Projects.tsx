@@ -1,11 +1,11 @@
 import { Carousel } from "react-responsive-carousel";
 import "react-responsive-carousel/lib/styles/carousel.min.css";
 import styled from "styled-components";
-import Card from "../components/Card";
-import Heading from "../components/Heading/Heading";
-import Section from "../components/Section";
-import icons from "../utility/icons";
-import projectImage from "../utility/projectImage";
+import Card from "../../components/Card";
+import Heading from "../../components/Heading/Heading";
+import Section from "../../components/Section";
+import icons from "../../utility/icons";
+import projectImage from "../../utility/projectImage";
 
 const cards = [
   {

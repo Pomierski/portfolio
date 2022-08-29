@@ -1,6 +1,6 @@
-import React from "react";
+import { useTranslation } from "react-i18next";
 import styled from "styled-components";
-import Button from "../components/Button/Button";
+import Button from "../../components/Button/Button";
 
 const Wrapper = styled.div`
   width: 100%;
@@ -23,16 +23,19 @@ const TextWrapper = styled.div`
   width: fit-content;
 `;
 
-const ContactCard = () => (
-  <Wrapper id="contact">
-    <TextWrapper>
-      <p>Zainteresowany?</p>
-      <Heading>Skontaktuj się ze mną</Heading>
-    </TextWrapper>
-    <Button center href="mailto: pomierskipiotr@gmail.com">
-      Kontakt
-    </Button>
-  </Wrapper>
-);
+const ContactCard = () => {
+  const { t } = useTranslation();
+  return (
+    <Wrapper id="contact">
+      <TextWrapper>
+        <p>{t("contact.intrested")}</p>
+        <Heading>{t("contact.contactMe")}</Heading>
+      </TextWrapper>
+      <Button center href="mailto: pomierskipiotr@gmail.com">
+        {t("contact.contact")}
+      </Button>
+    </Wrapper>
+  );
+};
 
 export default ContactCard;
