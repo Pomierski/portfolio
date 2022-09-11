@@ -4,75 +4,71 @@ import styled from "styled-components";
 import Card from "../../components/Card";
 import Heading from "../../components/Heading/Heading";
 import Section from "../../components/Section";
+import i18n from "../../i18n";
 import icons from "../../utility/icons";
 import projectImage from "../../utility/projectImage";
 
 const cards = [
   {
     title: "Marbond.pl",
-    subTitle: "Strona wizytówka",
+    subTitle: i18n.t("projects.marbond.subTitle"),
     previewImg: projectImage.marbond,
     icons: [icons.adobeXD, icons.react],
-    content: `Strona wizytkówka zaprojektowana i napisana dla firmy Marbond.`,
+    content: i18n.t("projects.marbond.content"),
     repoUrl: "https://github.com/Pomierski/Marbond",
     liveUrl: "https://marbond.pl/",
   },
   {
     title: "MyAnimeReminder",
-    subTitle: "Chrome Extension",
+    subTitle: i18n.t("projects.myAnimeReminder.subTitle"),
     previewImg: projectImage.myAnimeReminder,
     icons: [icons.react],
-    content: `Rozszerzenie do przeglądarek opartych na Chromium. Przy wykorzystaniu JikanAPI i 
-    SyncStorage przypomina o premierach odcinków anime.`,
+    content: i18n.t("projects.myAnimeReminder.content"),
     repoUrl: "https://github.com/Pomierski/MyAnimeReminder",
     liveUrl:
       "https://chrome.google.com/webstore/detail/myanimereminder/ncdghgolehhmfedjdbicgdbedefglbfk",
   },
   {
     title: "YayNay",
-    subTitle: "Projekt fullstack",
+    subTitle: i18n.t("projects.yayNay.subTitle"),
     previewImg: projectImage.yayNay,
     icons: [icons.mysql, icons.react, icons.ts, icons.nodejs],
-    content: `Projekt fullstack. Strona do tworzenia ankiet z dwoma opcjami - yay lub nay. 
-    Technologie wykorzystane do Back-endu (REST Api) to NodeJS z TypeScript oraz MySQL. Front-end napisany w React.`,
+    content: i18n.t("projects.yayNay.content"),
     repoUrl: "https://github.com/Pomierski/yaynay",
   },
   {
     title: "Silver",
-    subTitle: "Strona wizytówka",
+    subTitle: i18n.t("projects.silver.subTitle"),
     previewImg: projectImage.silver,
     icons: [icons.adobeXD, icons.sass, icons.html5],
-    content: `Szablon strony WWW. Stworzony przy użyciu własnego projektu. Napisany w HTMLu z użyciem SCSS. 
-    Jako bundler został wykorzystany Parcel.`,
+    content: i18n.t("projects.silver.content"),
     repoUrl: "https://github.com/Pomierski/website-template",
     liveUrl: "https://pomierski.github.io/website-template",
   },
   {
     title: "Organize",
-    subTitle: "NodeJS CLI",
+    subTitle: i18n.t("projects.organize.subTitle"),
     previewImg: projectImage.organize,
     icons: [icons.nodejs],
-    content: `Organize to NodeJS CLI, służące do organizowania plików w osobne foldery. 
-    Posiada różne opcje m.in. ignorowanie plików, przeniesienie tylko wybranego rodzaju plików`,
+    content: i18n.t("projects.organize.content"),
     repoUrl: "https://github.com/Pomierski/organize",
     liveUrl: "https://github.com/Pomierski/organize",
   },
   {
     title: "SuggestMeAnime",
-    subTitle: "React app",
+    subTitle: i18n.t("projects.suggestMeAnime.subTitle"),
     previewImg: projectImage.suggestMeAnime,
     icons: [icons.react, icons.redux],
-    content: `SuggestMeAnime to graficzny interfejs dla JikanAPI, pozwalający wyszukiwać pozycję dostepne w API. 
-    Napisane przy użyciu React & Redux`,
+    content: i18n.t("projects.suggestMeAnime.content"),
     repoUrl: "https://github.com/Pomierski/SuggestMeAnime",
     liveUrl: "https://pomierski.github.io/SuggestMeAnime",
   },
   {
     title: "Pomierski.pl",
-    subTitle: "Gatsby blog",
+    subTitle: i18n.t("projects.pomierski.subTitle"),
     previewImg: projectImage.pomierskiBlog,
     icons: [icons.gatsby, icons.graphql],
-    content: `Blog napisany przy użyciu Gatsby.js oraz Headless CMS (GraphCMS).`,
+    content: i18n.t("projects.pomierski.content"),
     repoUrl: "https://github.com/Pomierski/marcin-pomierski-wiersze",
     liveUrl: "http://www.pomierski.pl/",
   },

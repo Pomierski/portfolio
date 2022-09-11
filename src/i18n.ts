@@ -3,6 +3,7 @@ import { initReactI18next } from "react-i18next";
 import * as aboutTranslations from "./sections/About/translations/index.json";
 import * as contactTranslations from "./sections/ContactCard/translations/index.json";
 import * as heroTranslations from "./sections/Hero/translations/index.json";
+import * as projectsTranslations from "./sections/Projects/translations/index.json";
 
 i18n
   .use(initReactI18next) // passes i18n down to react-i18next
@@ -17,6 +18,7 @@ i18n
           contact: contactTranslations.pl,
           about: aboutTranslations.pl,
           hero: heroTranslations.pl,
+          projects: projectsTranslations.pl,
         },
       },
       en: {
@@ -24,6 +26,7 @@ i18n
           contact: contactTranslations.en,
           about: aboutTranslations.en,
           hero: heroTranslations.en,
+          projects: projectsTranslations.en,
         },
       },
     },
