@@ -1,3 +1,4 @@
+import { useTranslation } from "react-i18next";
 import {
   AiFillGithub,
   AiFillLinkedin,
@@ -6,14 +7,14 @@ import {
 import { FiMail } from "react-icons/fi";
 import { IoLocationSharp } from "react-icons/io5";
 import styled from "styled-components";
-import Button from "../components/Button/Button";
-import FlexCenter from "../components/FlexCenter";
-import AnimatedHeroImg from "../components/HeroAnimation/HeroAnimation";
-import MainHeading from "../components/MainHeading";
-import ScrollDownArrow from "../components/ScrollDownArrow";
-import StyledIcon from "../components/StyledIcon";
-import Text from "../components/Text/Text";
-import VertialTextBanner from "../components/VerticalTextBanner";
+import Button from "../../components/Button/Button";
+import FlexCenter from "../../components/FlexCenter";
+import AnimatedHeroImg from "../../components/HeroAnimation/HeroAnimation";
+import MainHeading from "../../components/MainHeading";
+import ScrollDownArrow from "../../components/ScrollDownArrow";
+import StyledIcon from "../../components/StyledIcon";
+import Text from "../../components/Text/Text";
+import VertialTextBanner from "../../components/VerticalTextBanner";
 
 const ContentWrapper = styled.div`
   display: flex;
@@ -121,61 +122,59 @@ const Content = styled.div`
   grid-column: 1;
 `;
 
-const Hero = () => (
-  <Wrapper>
-    <Content>
-      <ContentWrapper id="home">
-        <VertialTextBanner text="FRONT/END" />
-        <VertialTextBanner text="DEVELOPER" />
-        <TextWrapper>
-          <MainHeading>
-            Piotr <br /> Pomierski
-          </MainHeading>
-          <StyledP>
-            Cześć! 👋 Jestem junior front-end developerem. W swoich projektach
-            wykorzystuję głównie biblioteką React. Uwielbiam tworzyć aplikacje i
-            strony internetowe oraz poznawać nowe technologie. Badam również
-            świat backendu oraz projektowania UI/UX.
-          </StyledP>
-          <Info>
-            <FlexCenter margin=".5rem 0">
-              <StyledIcon margin="0 .5rem 0 0">
-                <FiMail />
-              </StyledIcon>
-              pomierskipiotr@gmail.com
-            </FlexCenter>
-            <FlexCenter>
-              <StyledIcon margin="0 .5rem 0 0">
-                <IoLocationSharp />
-              </StyledIcon>
-              Katowice, Polska
-            </FlexCenter>
-          </Info>
-        </TextWrapper>
-      </ContentWrapper>
-      <ButtonsWrapper>
-        <Button href="https://github.com/Pomierski" icon={<AiFillGithub />}>
-          Github
-        </Button>
-        <Button
-          href="https://www.linkedin.com/in/piotr-pomierski-5078781b1/"
-          icon={<AiFillLinkedin />}
-        >
-          Linkedin
-        </Button>
-        <Button
-          href="https://drive.google.com/file/d/1lNPaHDIU5MzaPPu4hn0xLz8AlbAVMaIl/view?usp=sharing"
-          icon={<AiOutlinePaperClip />}
-        >
-          CV
-        </Button>
-      </ButtonsWrapper>
-    </Content>
-    <HeroImg>
-      <AnimatedHeroImg />
-    </HeroImg>
-    <ScrollDownArrow />
-  </Wrapper>
-);
+const Hero = () => {
+  const { t } = useTranslation();
+  return (
+    <Wrapper>
+      <Content>
+        <ContentWrapper id="home">
+          <VertialTextBanner text="FRONT/END" />
+          <VertialTextBanner text="DEVELOPER" />
+          <TextWrapper>
+            <MainHeading>
+              Piotr <br /> Pomierski
+            </MainHeading>
+            <StyledP>{t("hero.bio")}</StyledP>
+            <Info>
+              <FlexCenter margin=".5rem 0">
+                <StyledIcon margin="0 .5rem 0 0">
+                  <FiMail />
+                </StyledIcon>
+                pomierskipiotr@gmail.com
+              </FlexCenter>
+              <FlexCenter>
+                <StyledIcon margin="0 .5rem 0 0">
+                  <IoLocationSharp />
+                </StyledIcon>
+                Katowice, {t("hero.poland")}
+              </FlexCenter>
+            </Info>
+          </TextWrapper>
+        </ContentWrapper>
+        <ButtonsWrapper>
+          <Button href="https://github.com/Pomierski" icon={<AiFillGithub />}>
+            Github
+          </Button>
+          <Button
+            href="https://www.linkedin.com/in/piotr-pomierski-5078781b1/"
+            icon={<AiFillLinkedin />}
+          >
+            Linkedin
+          </Button>
+          <Button
+            href="https://drive.google.com/file/d/1lNPaHDIU5MzaPPu4hn0xLz8AlbAVMaIl/view?usp=sharing"
+            icon={<AiOutlinePaperClip />}
+          >
+            CV
+          </Button>
+        </ButtonsWrapper>
+      </Content>
+      <HeroImg>
+        <AnimatedHeroImg />
+      </HeroImg>
+      <ScrollDownArrow />
+    </Wrapper>
+  );
+};
 
 export default Hero;

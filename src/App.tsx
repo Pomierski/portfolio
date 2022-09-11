@@ -4,7 +4,7 @@ import Container from "./components/Container";
 import About from "./sections/About/About";
 import ContactCard from "./sections/ContactCard/ContactCard";
 import Footer from "./sections/Footer";
-import Hero from "./sections/Hero";
+import Hero from "./sections/Hero/Hero";
 import MobileNav from "./sections/MobileNav";
 import Navbar from "./sections/Navbar";
 import Projects from "./sections/Projects/Projects";
