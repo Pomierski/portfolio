@@ -17,7 +17,7 @@ const About = () => {
           <Text>{t("about.bio", { years: currentYear - 2016 })}</Text>
         </div>
         <div>
-          <Heading>{t("experience")}</Heading>
+          <Heading>{t("about.experience")}</Heading>
           <Timeline
             positions={[
               {
