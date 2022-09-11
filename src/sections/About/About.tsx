@@ -1,3 +1,4 @@
+import { useTranslation } from "react-i18next";
 import Container from "../../components/Container";
 import Heading from "../../components/Heading/Heading";
 import Section from "../../components/Section";
@@ -6,45 +7,46 @@ import Timeline from "../../components/Timeline";
 
 const currentYear = new Date().getFullYear();
 
-const About = () => (
-  <Section id="about" gridCol="1 / 3">
-    <Container>
-      <div>
-        <Heading>O mnie</Heading>
-        <Text>
-          Interesuje się programowaniem od {currentYear - 2016} lat.
-          Specjalizuje się we front-endzie. Głównie w tworzeniu logiki oraz
-          stylowaniu UI. Tworzenie świetnie wygladających stron i aplikacji
-          sprawia mi najwięcej satysfakcji. Zawsze dążę do pisania coraz
-          lepszego kodu i poznawania nowych technologii. Lubię również pogłębiać
-          wiedzę ze świata backendu, ponieważ pozwala mi to na rozszerzanie
-          funkcjonalości moich projektów.
-        </Text>
-      </div>
-      <div>
-        <Heading>Doświadczenie</Heading>
-        <Timeline
-          positions={[
-            {
-              title: "Junior frontend developer (React)",
-              description: "kwi 2022 - obecnie",
-              company: "Shiji Poland",
-            },
-            {
-              title: "Junior frontend developer (Angular)",
-              description: "wrz 2021 - gru 2021 · 4 mies.",
-              company: "Tom&Co",
-            },
-            {
-              title: "Staż Junior frontend developer (Angular)",
-              description: "sie 2021 - wrz 2021 · 1 mies.",
-              company: "Tom&Co",
-            },
-          ]}
-        />
-      </div>
-    </Container>
-  </Section>
-);
+const About = () => {
+  const { t } = useTranslation();
+  return (
+    <Section id="about" gridCol="1 / 3">
+      <Container>
+        <div>
+          <Heading>{t("about.aboutMe")}</Heading>
+          <Text>{t("about.bio", { years: currentYear - 2016 })}</Text>
+        </div>
+        <div>
+          <Heading>{t("experience")}</Heading>
+          <Timeline
+            positions={[
+              {
+                title: "Junior frontend developer (React)",
+                description: `${t("about.april")} 2022 - ${t(
+                  "about.currently"
+                )}`,
+                company: "Shiji Poland",
+              },
+              {
+                title: "Junior frontend developer (Angular)",
+                description: `${t("about.september")} 2021 - ${t(
+                  "about.december"
+                )} 2021 · 4 ${t("about.months")}`,
+                company: "Tom&Co",
+              },
+              {
+                title: "Staż Junior frontend developer (Angular)",
+                description: `${t("about.october")} 2021 - ${t(
+                  "about.september"
+                )} 2021 · 1 ${t("about.months")}`,
+                company: "Tom&Co",
+              },
+            ]}
+          />
+        </div>
+      </Container>
+    </Section>
+  );
+};
 
 export default About;

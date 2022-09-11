@@ -1,0 +1,40 @@
+{
+  "pl": {
+    "aboutMe": "O mnie",
+    "bio": "Interesuje się programowaniem od {{years}} lat. Specjalizuje się w tworzeniu logiki oraz stylowaniu UI. Tworzenie świetnie wygladających stron i aplikacji sprawia mi najwięcej satysfakcji. Zawsze dążę do pisania najlepszego kodu i rozwijania się w nowych technologiach. Pogłębiam również wiedzę ze świata backendu, ponieważ pozwala mi to na rozszerzanie funkcjonalości moich projektów.",
+    "experience": "Doświadczenie",
+    "january": "sty",
+    "february": "luty",
+    "march": "mar",
+    "april": "kwi",
+    "may": "maj",
+    "june": "cze",
+    "july": "lip",
+    "august": "sie",
+    "september": "wrz",
+    "october": "paź",
+    "november": "lis",
+    "december": "gru",
+    "current": "obecnie",
+    "months": "mieś."
+  },
+  "en": {
+    "aboutMe": "About me",
+    "bio": "I've been intrested in programming for {{years}} years.  I specialize in creating logic and UI styling. Developing great looking websites and apps gives me the most satisfaction. I always strive to write the best code and learn new technologies. I also deepen my knowledge of the backend, as it allows me to extend the functionality of my projects.",
+    "experience": "Experience",
+    "january": "Jan.",
+    "february": "Feb.",
+    "march": "Mar.",
+    "april": "Apr.",
+    "may": "May",
+    "june": "June",
+    "july": "July",
+    "august": "Aug.",
+    "september": "Sep.",
+    "october": "Oct.",
+    "november": "Nov.",
+    "december": "Dec.",
+    "currently": "currently",
+    "months": "months"
+  }
+}

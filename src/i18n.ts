@@ -1,6 +1,7 @@
 import i18n from "i18next";
 import { initReactI18next } from "react-i18next";
-import contactTranslations from "./sections/ContactCard/translations";
+import * as aboutTranslations from "./sections/About/translations/index.json";
+import * as contactTranslations from "./sections/ContactCard/translations/index.json";
 
 i18n
   .use(initReactI18next) // passes i18n down to react-i18next
@@ -13,11 +14,13 @@ i18n
       pl: {
         translation: {
           contact: contactTranslations.pl,
+          about: aboutTranslations.pl,
         },
       },
       en: {
         translation: {
           contact: contactTranslations.en,
+          about: aboutTranslations.en,
         },
       },
     },
