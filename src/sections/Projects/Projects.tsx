@@ -2,11 +2,11 @@ import { useTranslation } from "react-i18next";
 import { Carousel } from "react-responsive-carousel";
 import "react-responsive-carousel/lib/styles/carousel.min.css";
 import styled from "styled-components";
+import { icons } from "../../assets/icons";
+import { projectImage } from "../../assets/projectImage";
 import { Card } from "../../components/Card";
 import { Heading } from "../../components/Heading/Heading";
 import { Section } from "../../components/Section";
-import { icons } from "../../utility/icons";
-import { projectImage } from "../../utility/projectImage";
 import { SectionIds } from "../sectionIds";
 
 const cards = [

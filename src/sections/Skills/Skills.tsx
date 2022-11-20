@@ -1,11 +1,11 @@
 import { useTranslation } from "react-i18next";
 import styled from "styled-components";
+import { icons } from "../../assets/icons";
 import { Container } from "../../components/Container";
 import { Heading } from "../../components/Heading/Heading";
 import { Panel } from "../../components/Panel/Panel";
 import { Section } from "../../components/Section";
 import { Text } from "../../components/Text/Text";
-import { icons } from "../../utility/icons";
 import { SectionIds } from "../sectionIds";
 
 const PanelWrapper = styled.div`
