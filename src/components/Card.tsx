@@ -1,4 +1,5 @@
 import React from "react";
+import { useTranslation } from "react-i18next";
 import { AiFillGithub } from "react-icons/ai";
 import { MdFindInPage } from "react-icons/md";
 import styled from "styled-components";
@@ -6,8 +7,9 @@ import { Button } from "./Button/Button";
 import { Text } from "./Text/Text";
 
 interface PropTypes {
+  contentTranslation: string;
   previewImg: string;
-  subTitle: string;
+  subTitleTranslation: string;
   title: string;
   icons: string[];
   repoUrl: string;
@@ -84,43 +86,46 @@ const Content = styled.div`
 
 export const Card = ({
   previewImg,
-  subTitle,
+  subTitleTranslation,
+  contentTranslation,
   title,
   icons,
   repoUrl,
   liveUrl,
-  children,
-}: PropTypes) => (
-  <Wrapper>
-    <Preview previewImg={previewImg}>
-      <IconsWrapper>
-        {icons
-          ? icons.map((icon, key) => (
-              <Icon src={icon} alt="" key={key} width="36px" height="51px" />
-            ))
-          : null}
-      </IconsWrapper>
-    </Preview>
-    <Content>
-      <header>
-        <SubTitle color="accent" margin="0" fontSize="xs">
-          {subTitle}
-        </SubTitle>
-        <Heading>{title}</Heading>
-      </header>
-      <p>{children}</p>
-      <ButtonsWrapper>
-        <Button href={repoUrl} margin="0 .5rem 0 0" icon={<AiFillGithub />}>
-          Github
-        </Button>
-        <Button
-          href={liveUrl || "#"}
-          disable={!liveUrl}
-          icon={<MdFindInPage />}
-        >
-          Live
-        </Button>
-      </ButtonsWrapper>
-    </Content>
-  </Wrapper>
-);
+}: PropTypes) => {
+  const { t } = useTranslation();
+  return (
+    <Wrapper>
+      <Preview previewImg={previewImg}>
+        <IconsWrapper>
+          {icons
+            ? icons.map((icon, key) => (
+                <Icon src={icon} alt="" key={key} width="36px" height="51px" />
+              ))
+            : null}
+        </IconsWrapper>
+      </Preview>
+      <Content>
+        <header>
+          <SubTitle color="accent" margin="0" fontSize="xs">
+            {t(subTitleTranslation)}
+          </SubTitle>
+          <Heading>{title}</Heading>
+        </header>
+        <p>{t(contentTranslation)}</p>
+        <ButtonsWrapper>
+          <Button href={repoUrl} margin="0 .5rem 0 0" icon={<AiFillGithub />}>
+            Github
+          </Button>
+          <Button
+            href={liveUrl || "#"}
+            disable={!liveUrl}
+            icon={<MdFindInPage />}
+          >
+            Live
+          </Button>
+        </ButtonsWrapper>
+      </Content>
+    </Wrapper>
+  );
+};

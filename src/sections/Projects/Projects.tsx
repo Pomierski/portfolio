@@ -5,7 +5,6 @@ import styled from "styled-components";
 import { Card } from "../../components/Card";
 import { Heading } from "../../components/Heading/Heading";
 import { Section } from "../../components/Section";
-import i18n from "../../i18n";
 import { icons } from "../../utility/icons";
 import { projectImage } from "../../utility/projectImage";
 import { SectionIds } from "../sectionIds";
@@ -13,64 +12,64 @@ import { SectionIds } from "../sectionIds";
 const cards = [
   {
     title: "Marbond.pl",
-    subTitle: i18n.t("projects.marbond.subTitle"),
+    subTitleTranslation: "projects.marbond.subTitle",
     previewImg: projectImage.marbond,
     icons: [icons.adobeXD, icons.react],
-    content: i18n.t("projects.marbond.content"),
+    contentTranslation: "projects.marbond.content",
     repoUrl: "https://github.com/Pomierski/Marbond",
     liveUrl: "https://marbond.pl/",
   },
   {
     title: "MyAnimeReminder",
-    subTitle: i18n.t("projects.myAnimeReminder.subTitle"),
+    subTitleTranslation: "projects.myAnimeReminder.subTitle",
     previewImg: projectImage.myAnimeReminder,
     icons: [icons.react],
-    content: i18n.t("projects.myAnimeReminder.content"),
+    contentTranslation: "projects.myAnimeReminder.content",
     repoUrl: "https://github.com/Pomierski/MyAnimeReminder",
     liveUrl:
       "https://chrome.google.com/webstore/detail/myanimereminder/ncdghgolehhmfedjdbicgdbedefglbfk",
   },
   {
     title: "YayNay",
-    subTitle: i18n.t("projects.yayNay.subTitle"),
+    subTitleTranslation: "projects.yayNay.subTitle",
     previewImg: projectImage.yayNay,
     icons: [icons.mysql, icons.react, icons.ts, icons.nodejs],
-    content: i18n.t("projects.yayNay.content"),
+    contentTranslation: "projects.yayNay.content",
     repoUrl: "https://github.com/Pomierski/yaynay",
   },
   {
     title: "Silver",
-    subTitle: i18n.t("projects.silver.subTitle"),
+    subTitleTranslation: "projects.silver.subTitle",
     previewImg: projectImage.silver,
     icons: [icons.adobeXD, icons.sass, icons.html5],
-    content: i18n.t("projects.silver.content"),
+    contentTranslation: "projects.silver.content",
     repoUrl: "https://github.com/Pomierski/website-template",
     liveUrl: "https://pomierski.github.io/website-template",
   },
   {
     title: "Organize",
-    subTitle: i18n.t("projects.organize.subTitle"),
+    subTitleTranslation: "projects.organize.subTitle",
     previewImg: projectImage.organize,
     icons: [icons.nodejs],
-    content: i18n.t("projects.organize.content"),
+    contentTranslation: "projects.organize.content",
     repoUrl: "https://github.com/Pomierski/organize",
     liveUrl: "https://github.com/Pomierski/organize",
   },
   {
     title: "SuggestMeAnime",
-    subTitle: i18n.t("projects.suggestMeAnime.subTitle"),
+    subTitleTranslation: "projects.suggestMeAnime.subTitle",
     previewImg: projectImage.suggestMeAnime,
     icons: [icons.react, icons.redux],
-    content: i18n.t("projects.suggestMeAnime.content"),
+    contentTranslation: "projects.suggestMeAnime.content",
     repoUrl: "https://github.com/Pomierski/SuggestMeAnime",
     liveUrl: "https://pomierski.github.io/SuggestMeAnime",
   },
   {
     title: "Pomierski.pl",
-    subTitle: i18n.t("projects.pomierski.subTitle"),
+    subTitleTranslation: "projects.pomierski.subTitle",
     previewImg: projectImage.pomierskiBlog,
     icons: [icons.gatsby, icons.graphql],
-    content: i18n.t("projects.pomierski.content"),
+    contentTranslation: "projects.pomierski.content",
     repoUrl: "https://github.com/Pomierski/marcin-pomierski-wiersze",
     liveUrl: "http://www.pomierski.pl/",
   },
@@ -105,24 +104,23 @@ export const Projects = () => {
         {cards.map(
           ({
             title,
-            subTitle,
+            subTitleTranslation,
             previewImg,
             icons,
-            content,
+            contentTranslation,
             repoUrl,
             liveUrl,
           }) => (
             <Card
               title={title}
-              subTitle={subTitle}
+              subTitleTranslation={subTitleTranslation}
               previewImg={previewImg}
               icons={icons}
               key={title}
               repoUrl={repoUrl}
               liveUrl={liveUrl}
-            >
-              {content}
-            </Card>
+              contentTranslation={contentTranslation}
+            />
           )
         )}
       </CardsWrapper>
@@ -138,24 +136,23 @@ export const Projects = () => {
         {cards.map(
           ({
             title,
-            subTitle,
             previewImg,
             icons,
-            content,
+            contentTranslation,
             repoUrl = "https://github.com/Pomierski?tab=repositories",
             liveUrl = "https://github.com/Pomierski?tab=repositories",
+            subTitleTranslation,
           }) => (
             <Card
               title={title}
-              subTitle={subTitle}
+              subTitleTranslation={subTitleTranslation}
+              contentTranslation={contentTranslation}
               previewImg={previewImg}
               icons={icons}
               key={title}
               repoUrl={repoUrl}
               liveUrl={liveUrl}
-            >
-              {content}
-            </Card>
+            />
           )
         )}
       </StyledCarousel>
