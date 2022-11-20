@@ -16,7 +16,9 @@
     "november": "lis",
     "december": "gru",
     "current": "obecnie",
-    "months": "mieś."
+    "months": "{{count}} mieś.",
+    "year_one": "{{count}} rok",
+    "year_other": "{{count}} lat"
   },
   "en": {
     "aboutMe": "About me",
@@ -35,6 +37,8 @@
     "november": "Nov.",
     "december": "Dec.",
     "currently": "currently",
-    "months": "months"
+    "months": "{{count}} months",
+    "year_one": "{{count}} year",
+    "year_other": "{{count}} years"
   }
 }
