@@ -44,8 +44,8 @@ export const Navlist = ({ items }: PropTypes) => {
 
   return (
     <List>
-      {items.map((item) => (
-        <ListItem>
+      {items.map((item, key) => (
+        <ListItem key={key}>
           <Link to={item.linkTo} smooth={item.smooth} offset={item.offset ?? 0}>
             {t(item.translaionPath)}
           </Link>
