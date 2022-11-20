@@ -42,6 +42,7 @@ const IconWrapper = styled.div`
 
   & > img {
     min-height: 1.5rem;
+    object-fit: scale-down;
   }
   @media (min-width: ${(props) => props.theme.screenSize.sm}) {
     width: 2rem;
