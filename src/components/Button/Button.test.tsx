@@ -1,6 +1,6 @@
-import theme from "../../styles/theme";
+import { theme } from "../../styles/theme";
 import { render, screen } from "../../tests/test-utils";
-import Button from "./Button";
+import { Button } from "./Button";
 
 describe("<Heading />", () => {
   it("renders fill variant correctly", () => {

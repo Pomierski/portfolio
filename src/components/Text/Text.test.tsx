@@ -1,6 +1,6 @@
-import theme from "../../styles/theme";
+import { theme } from "../../styles/theme";
 import { render, screen } from "../../tests/test-utils";
-import Text from "./Text";
+import { Text } from "./Text";
 
 describe("< Text />", () => {
   it("should render correctly", () => {

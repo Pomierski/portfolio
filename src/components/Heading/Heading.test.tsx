@@ -1,6 +1,6 @@
-import theme from "../../styles/theme";
+import { theme } from "../../styles/theme";
 import { render, screen } from "../../tests/test-utils";
-import Heading from "./Heading";
+import { Heading } from "./Heading";
 
 describe("<Heading />", () => {
   it("should render correctly", () => {

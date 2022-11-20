@@ -1,5 +1,5 @@
 import { render, screen } from "../../tests/test-utils";
-import Panel from "./Panel";
+import { Panel } from "./Panel";
 
 describe("< Text />", () => {
   it("should render correctly", () => {

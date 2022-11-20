@@ -81,7 +81,7 @@ export const Button = ({
       {children}
       {icon ? (
         <StyledIcon
-          data-testId="button-icon"
+          data-testid="button-icon"
           color={disable ? theme.color.secondary : theme.color.accent}
           margin="0 0 0 .25rem"
         >
