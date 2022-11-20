@@ -34,7 +34,6 @@ i18n
       },
     },
     react: { useSuspense: false },
-    lng: "en",
   });
 
 export default i18n;
