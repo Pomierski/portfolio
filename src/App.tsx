@@ -8,7 +8,7 @@ import { Hero } from "./sections/Hero/Hero";
 import { MobileNav } from "./sections/MobileNav";
 import { Navbar } from "./sections/Navbar";
 import { Projects } from "./sections/Projects/Projects";
-import { Skills } from "./sections/Skills";
+import { Skills } from "./sections/Skills/Skills";
 import { theme } from "./styles/theme";
 
 function App() {
