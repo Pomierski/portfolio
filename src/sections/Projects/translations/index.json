@@ -1,5 +1,6 @@
 {
   "pl": {
+    "heading": "Projekty",
     "marbond": {
       "subTitle": "Strona wizytówka",
       "content": "Strona wizytkówka. Zaprojektowana i napisana dla firmy Marbond."
@@ -30,8 +31,9 @@
     }
   },
   "en": {
+    "heading": "Projects",
     "marbond": {
-      "subTitle": "Strona wizytówka",
+      "subTitle": "Company website",
       "content": "Website designed and developed for Marbond company"
     },
     "myAnimeReminder": {
@@ -39,7 +41,7 @@
       "content": "An extension for Chromium based browsers which reminds you of anime episode premieres."
     },
     "silver": {
-      "subTitle": "Strona wizytówka",
+      "subTitle": "Website template",
       "content": "Website template. Created using an own design. Written in HTML and SCSS and Parcel.js as bundler."
     },
     "organize": {
@@ -55,7 +57,7 @@
       "content": "Blog written using Gatsby.js and Headless CMS (GraphCMS)"
     },
     "yayNay": {
-      "subTitle": "Projekt fullstack",
+      "subTitle": "Fullstack project",
       "content": "An application for creating surveys with two options - yay or nay. Technologies used for REST Api are NodeJS with TypeScript and MySQL. Front-end written in React."
     }
   }

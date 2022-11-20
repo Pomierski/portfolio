@@ -1,3 +1,4 @@
+import { useTranslation } from "react-i18next";
 import { Carousel } from "react-responsive-carousel";
 import "react-responsive-carousel/lib/styles/carousel.min.css";
 import styled from "styled-components";
@@ -94,58 +95,69 @@ const StyledCarousel = styled(Carousel)`
   }
 `;
 
-export const Projects = () => (
-  <Section id="projects" gridCol="1 / 3">
-    <Heading>Projekty</Heading>
-    <CardsWrapper>
-      {cards.map(
-        ({ title, subTitle, previewImg, icons, content, repoUrl, liveUrl }) => (
-          <Card
-            title={title}
-            subTitle={subTitle}
-            previewImg={previewImg}
-            icons={icons}
-            key={title}
-            repoUrl={repoUrl}
-            liveUrl={liveUrl}
-          >
-            {content}
-          </Card>
-        )
-      )}
-    </CardsWrapper>
-    <StyledCarousel
-      autoPlay={true}
-      infiniteLoop={true}
-      showStatus={false}
-      swipeable={true}
-      showThumbs={false}
-      showArrows={false}
-      interval={4000}
-    >
-      {cards.map(
-        ({
-          title,
-          subTitle,
-          previewImg,
-          icons,
-          content,
-          repoUrl = "https://github.com/Pomierski?tab=repositories",
-          liveUrl = "https://github.com/Pomierski?tab=repositories",
-        }) => (
-          <Card
-            title={title}
-            subTitle={subTitle}
-            previewImg={previewImg}
-            icons={icons}
-            key={title}
-            repoUrl={repoUrl}
-            liveUrl={liveUrl}
-          >
-            {content}
-          </Card>
-        )
-      )}
-    </StyledCarousel>
-  </Section>
-);
+export const Projects = () => {
+  const { t } = useTranslation();
+  return (
+    <Section id="projects" gridCol="1 / 3">
+      <Heading>{t("projects.heading")}</Heading>
+      <CardsWrapper>
+        {cards.map(
+          ({
+            title,
+            subTitle,
+            previewImg,
+            icons,
+            content,
+            repoUrl,
+            liveUrl,
+          }) => (
+            <Card
+              title={title}
+              subTitle={subTitle}
+              previewImg={previewImg}
+              icons={icons}
+              key={title}
+              repoUrl={repoUrl}
+              liveUrl={liveUrl}
+            >
+              {content}
+            </Card>
+          )
+        )}
+      </CardsWrapper>
+      <StyledCarousel
+        autoPlay={true}
+        infiniteLoop={true}
+        showStatus={false}
+        swipeable={true}
+        showThumbs={false}
+        showArrows={false}
+        interval={4000}
+      >
+        {cards.map(
+          ({
+            title,
+            subTitle,
+            previewImg,
+            icons,
+            content,
+            repoUrl = "https://github.com/Pomierski?tab=repositories",
+            liveUrl = "https://github.com/Pomierski?tab=repositories",
+          }) => (
+            <Card
+              title={title}
+              subTitle={subTitle}
+              previewImg={previewImg}
+              icons={icons}
+              key={title}
+              repoUrl={repoUrl}
+              liveUrl={liveUrl}
+            >
+              {content}
+            </Card>
+          )
+        )}
+      </StyledCarousel>
+    </Section>
+  );
+};
