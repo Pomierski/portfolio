@@ -6,6 +6,7 @@ import { Panel } from "../../components/Panel/Panel";
 import { Section } from "../../components/Section";
 import { Text } from "../../components/Text/Text";
 import { icons } from "../../utility/icons";
+import { SectionIds } from "../sectionIds";
 
 const PanelWrapper = styled.div`
   padding: 1rem 0 1rem 0;
@@ -30,7 +31,7 @@ const PanelWrapper = styled.div`
 export const Skills = () => {
   const { t } = useTranslation();
   return (
-    <Section id="skills" gridCol="1 / 3">
+    <Section id={SectionIds.skills} gridCol="1 / 3">
       <Heading>{t("skills.heading")}</Heading>
       <Container margin="0 auto 2rem auto">
         <div>{t("skills.description")}</div>

@@ -1,6 +1,17 @@
 import { Link } from "react-scroll";
 import styled from "styled-components";
 
+interface PropTypes {
+  items: NavListItem[];
+}
+
+export interface NavListItem {
+  content: string;
+  linkTo: string;
+  smooth?: boolean;
+  offset?: number;
+}
+
 const List = styled.ul`
   list-style-type: none;
   padding: 0;
@@ -27,22 +38,14 @@ const ListItem = styled.li`
   }
 `;
 
-export const Navlist = () => (
+export const Navlist = ({ items }: PropTypes) => (
   <List>
-    <ListItem>
-      <Link to="skills" smooth offset={-10}>
-        Technologie
-      </Link>
-    </ListItem>
-    <ListItem>
-      <Link to="projects" smooth offset={-10}>
-        Projekty
-      </Link>
-    </ListItem>
-    <ListItem>
-      <Link to="contact" smooth>
-        Kontakt
-      </Link>
-    </ListItem>
+    {items.map((item) => (
+      <ListItem>
+        <Link to={item.linkTo} smooth={item.smooth} offset={item.offset ?? 0}>
+          {item.content}
+        </Link>
+      </ListItem>
+    ))}
   </List>
 );

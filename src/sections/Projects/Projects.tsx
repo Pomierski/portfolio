@@ -8,6 +8,7 @@ import { Section } from "../../components/Section";
 import i18n from "../../i18n";
 import { icons } from "../../utility/icons";
 import { projectImage } from "../../utility/projectImage";
+import { SectionIds } from "../sectionIds";
 
 const cards = [
   {
@@ -98,7 +99,7 @@ const StyledCarousel = styled(Carousel)`
 export const Projects = () => {
   const { t } = useTranslation();
   return (
-    <Section id="projects" gridCol="1 / 3">
+    <Section id={SectionIds.projects} gridCol="1 / 3">
       <Heading>{t("projects.heading")}</Heading>
       <CardsWrapper>
         {cards.map(

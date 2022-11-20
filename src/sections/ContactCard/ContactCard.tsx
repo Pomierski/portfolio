@@ -1,6 +1,7 @@
 import { useTranslation } from "react-i18next";
 import styled from "styled-components";
 import { Button } from "../../components/Button/Button";
+import { SectionIds } from "../sectionIds";
 
 const Wrapper = styled.div`
   width: 100%;
@@ -26,7 +27,7 @@ const TextWrapper = styled.div`
 export const ContactCard = () => {
   const { t } = useTranslation();
   return (
-    <Wrapper id="contact">
+    <Wrapper id={SectionIds.contact}>
       <TextWrapper>
         <p>{t("contact.intrested")}</p>
         <Heading>{t("contact.contactMe")}</Heading>

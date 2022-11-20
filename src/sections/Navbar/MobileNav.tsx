@@ -1,9 +1,10 @@
 import React, { useEffect, useRef, useState } from "react";
 import { CgMenuGridO } from "react-icons/cg";
 import styled from "styled-components";
-import { MobileMenu } from "../components/MobileMenu";
-import { Navlist } from "../components/NavList";
-import { StyledIcon } from "../components/StyledIcon";
+import { MobileMenu } from "../../components/MobileMenu";
+import { Navlist } from "../../components/NavList";
+import { StyledIcon } from "../../components/StyledIcon";
+import { navItems } from "./shared/navItems";
 
 interface PropTypes {
   outsideRef: React.MutableRefObject<HTMLDivElement | null>;
@@ -46,7 +47,7 @@ export const MobileNav = ({ outsideRef }: PropTypes) => {
   return (
     <Wrapper>
       <MobileMenu $display={display} ref={menuRef}>
-        <Navlist />
+        <Navlist items={navItems} />
       </MobileMenu>
       <StyledIcon margin="0 -3px 0 auto" fontSize="2.5rem" onClick={toggleMenu}>
         <AnimatedIcon $display={display} />
