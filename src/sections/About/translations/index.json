@@ -37,7 +37,8 @@
     "november": "Nov.",
     "december": "Dec.",
     "currently": "currently",
-    "months": "{{count}} months",
+    "months_one": "{{count}} month",
+    "months_other": "{{count}} months",
     "year_one": "{{count}} year",
     "year_other": "{{count}} years"
   }
