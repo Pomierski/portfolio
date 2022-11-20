@@ -30,6 +30,7 @@ const PanelWrapper = styled.div`
 
 export const Skills = () => {
   const { t } = useTranslation();
+
   return (
     <Section id={SectionIds.skills} gridCol="1 / 3">
       <Heading>{t("skills.heading")}</Heading>

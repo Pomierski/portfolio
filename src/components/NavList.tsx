@@ -1,3 +1,4 @@
+import { useTranslation } from "react-i18next";
 import { Link } from "react-scroll";
 import styled from "styled-components";
 
@@ -6,7 +7,7 @@ interface PropTypes {
 }
 
 export interface NavListItem {
-  content: string;
+  translaionPath: string;
   linkTo: string;
   smooth?: boolean;
   offset?: number;
@@ -38,14 +39,18 @@ const ListItem = styled.li`
   }
 `;
 
-export const Navlist = ({ items }: PropTypes) => (
-  <List>
-    {items.map((item) => (
-      <ListItem>
-        <Link to={item.linkTo} smooth={item.smooth} offset={item.offset ?? 0}>
-          {item.content}
-        </Link>
-      </ListItem>
-    ))}
-  </List>
-);
+export const Navlist = ({ items }: PropTypes) => {
+  const { t } = useTranslation();
+
+  return (
+    <List>
+      {items.map((item) => (
+        <ListItem>
+          <Link to={item.linkTo} smooth={item.smooth} offset={item.offset ?? 0}>
+            {t(item.translaionPath)}
+          </Link>
+        </ListItem>
+      ))}
+    </List>
+  );
+};

@@ -3,19 +3,19 @@ import { SectionIds } from "../../sectionIds";
 
 export const navItems: NavListItem[] = [
   {
-    content: "Technologie",
+    translaionPath: "skills.heading",
     linkTo: SectionIds.skills,
     smooth: true,
     offset: -10,
   },
   {
-    content: "Projekty",
+    translaionPath: "projects.heading",
     linkTo: SectionIds.projects,
     smooth: true,
     offset: -10,
   },
   {
-    content: "Kontakt",
+    translaionPath: "contact.contact",
     linkTo: SectionIds.contact,
     smooth: true,
   },
