@@ -9,7 +9,7 @@ import { MobileNav } from "./sections/MobileNav";
 import { Navbar } from "./sections/Navbar";
 import { Projects } from "./sections/Projects/Projects";
 import { Skills } from "./sections/Skills";
-import theme from "./styles/theme";
+import { theme } from "./styles/theme";
 
 function App() {
   const appRef = useRef<HTMLDivElement>(null);

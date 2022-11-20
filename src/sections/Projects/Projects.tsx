@@ -6,7 +6,7 @@ import { Heading } from "../../components/Heading/Heading";
 import { Section } from "../../components/Section";
 import i18n from "../../i18n";
 import { icons } from "../../utility/icons";
-import projectImage from "../../utility/projectImage";
+import { projectImage } from "../../utility/projectImage";
 
 const cards = [
   {

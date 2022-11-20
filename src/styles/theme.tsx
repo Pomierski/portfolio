@@ -1,6 +1,6 @@
 export type Theme = Readonly<typeof theme>;
 
-const theme = {
+export const theme = {
   color: {
     main: "#fff",
     secondary: "#BDBDBD",
@@ -29,5 +29,3 @@ const theme = {
   horizontalHeightLimit: "400px",
   navbarHeight: "4rem",
 };
-
-export default theme;

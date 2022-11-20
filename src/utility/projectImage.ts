@@ -6,7 +6,7 @@ import silver from "../assets/project-5.webp";
 import myAnimeReminder from "../assets/project-6.webp";
 import yayNay from "../assets/project-7.webp";
 
-const projectImage = {
+export const projectImage = {
   marbond,
   suggestMeAnime,
   pomierskiBlog,
@@ -15,5 +15,3 @@ const projectImage = {
   myAnimeReminder,
   yayNay,
 };
-
-export default projectImage;
