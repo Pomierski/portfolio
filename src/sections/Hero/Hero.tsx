@@ -7,14 +7,14 @@ import {
 import { FiMail } from "react-icons/fi";
 import { IoLocationSharp } from "react-icons/io5";
 import styled from "styled-components";
-import Button from "../../components/Button/Button";
-import FlexCenter from "../../components/FlexCenter";
-import AnimatedHeroImg from "../../components/HeroAnimation/HeroAnimation";
-import MainHeading from "../../components/MainHeading";
-import ScrollDownArrow from "../../components/ScrollDownArrow";
-import StyledIcon from "../../components/StyledIcon";
-import Text from "../../components/Text/Text";
-import VertialTextBanner from "../../components/VerticalTextBanner";
+import { Button } from "../../components/Button/Button";
+import { FlexCenter } from "../../components/FlexCenter";
+import { HeroAnimation } from "../../components/HeroAnimation/HeroAnimation";
+import { MainHeading } from "../../components/MainHeading";
+import { ScrollDownArrow } from "../../components/ScrollDownArrow";
+import { StyledIcon } from "../../components/StyledIcon";
+import { Text } from "../../components/Text/Text";
+import { VertialTextBanner } from "../../components/VerticalTextBanner";
 
 const ContentWrapper = styled.div`
   display: flex;
@@ -122,7 +122,7 @@ const Content = styled.div`
   grid-column: 1;
 `;
 
-const Hero = () => {
+export const Hero = () => {
   const { t } = useTranslation();
   return (
     <Wrapper>
@@ -170,11 +170,9 @@ const Hero = () => {
         </ButtonsWrapper>
       </Content>
       <HeroImg>
-        <AnimatedHeroImg />
+        <HeroAnimation />
       </HeroImg>
       <ScrollDownArrow />
     </Wrapper>
   );
 };
-
-export default Hero;

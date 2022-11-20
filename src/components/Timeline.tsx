@@ -1,6 +1,6 @@
 import React from "react";
 import styled from "styled-components";
-import Text from "./Text/Text";
+import { Text } from "./Text/Text";
 
 interface Position {
   title: string;
@@ -58,7 +58,7 @@ const StyledText = styled(Text)`
   }
 `;
 
-const Timeline = ({ positions }: PropTypes) => {
+export const Timeline = ({ positions }: PropTypes) => {
   return (
     <Wrapper>
       {positions.map((el, index) => (
@@ -79,5 +79,3 @@ const Timeline = ({ positions }: PropTypes) => {
     </Wrapper>
   );
 };
-
-export default Timeline;

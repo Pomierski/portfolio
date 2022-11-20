@@ -28,12 +28,10 @@ const Wrapper = styled.div`
   }
 `;
 
-const VertialTextBanner = ({ text }: PropTypes) => (
+export const VertialTextBanner = ({ text }: PropTypes) => (
   <Wrapper>
     {text.split("").map((letter, index) => (
       <div key={index}>{letter}</div>
     ))}
   </Wrapper>
 );
-
-export default VertialTextBanner;

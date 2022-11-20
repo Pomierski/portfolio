@@ -1,4 +1,3 @@
-import React from "react";
 import { Link } from "react-scroll";
 import styled from "styled-components";
 
@@ -28,7 +27,7 @@ const ListItem = styled.li`
   }
 `;
 
-const Navlist = () => (
+export const Navlist = () => (
   <List>
     <ListItem>
       <Link to="skills" smooth offset={-10}>
@@ -47,5 +46,3 @@ const Navlist = () => (
     </ListItem>
   </List>
 );
-
-export default Navlist;

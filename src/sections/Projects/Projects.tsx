@@ -1,11 +1,11 @@
 import { Carousel } from "react-responsive-carousel";
 import "react-responsive-carousel/lib/styles/carousel.min.css";
 import styled from "styled-components";
-import Card from "../../components/Card";
-import Heading from "../../components/Heading/Heading";
-import Section from "../../components/Section";
+import { Card } from "../../components/Card";
+import { Heading } from "../../components/Heading/Heading";
+import { Section } from "../../components/Section";
 import i18n from "../../i18n";
-import icons from "../../utility/icons";
+import { icons } from "../../utility/icons";
 import projectImage from "../../utility/projectImage";
 
 const cards = [
@@ -94,7 +94,7 @@ const StyledCarousel = styled(Carousel)`
   }
 `;
 
-const Projects = () => (
+export const Projects = () => (
   <Section id="projects" gridCol="1 / 3">
     <Heading>Projekty</Heading>
     <CardsWrapper>
@@ -149,5 +149,3 @@ const Projects = () => (
     </StyledCarousel>
   </Section>
 );
-
-export default Projects;

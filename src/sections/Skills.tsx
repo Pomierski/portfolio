@@ -1,10 +1,10 @@
 import styled from "styled-components";
-import Container from "../components/Container";
-import Heading from "../components/Heading/Heading";
-import Panel from "../components/Panel/Panel";
-import Section from "../components/Section";
-import Text from "../components/Text/Text";
-import icons from "../utility/icons";
+import { Container } from "../components/Container";
+import { Heading } from "../components/Heading/Heading";
+import { Panel } from "../components/Panel/Panel";
+import { Section } from "../components/Section";
+import { Text } from "../components/Text/Text";
+import { icons } from "../utility/icons";
 
 const PanelWrapper = styled.div`
   padding: 1rem 0 1rem 0;
@@ -26,7 +26,7 @@ const PanelWrapper = styled.div`
   }
 `;
 
-const Skills = () => (
+export const Skills = () => (
   <Section id="skills" gridCol="1 / 3">
     <Heading>Technologie</Heading>
     <Container margin="0 auto 2rem auto">
@@ -73,5 +73,3 @@ const Skills = () => (
     </Container>
   </Section>
 );
-
-export default Skills;

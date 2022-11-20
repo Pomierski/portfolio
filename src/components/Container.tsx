@@ -4,7 +4,7 @@ interface Props {
   margin?: string;
 }
 
-const Container = styled.div<Props>`
+export const Container = styled.div<Props>`
   width: 21.5rem;
   margin: ${(props) => props.margin || "0 auto"};
 
@@ -27,5 +27,3 @@ const Container = styled.div<Props>`
     grid-column-gap: 2rem;
   }
 `;
-
-export default Container;

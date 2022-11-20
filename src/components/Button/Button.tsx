@@ -1,6 +1,6 @@
 import styled, { css, useTheme } from "styled-components";
 import { Theme } from "../../styles/theme";
-import StyledIcon from "../StyledIcon";
+import { StyledIcon } from "../StyledIcon";
 
 interface PropTypes {
   margin?: string;
@@ -60,7 +60,7 @@ const Wrapper = styled.a<Partial<PropTypes>>`
     `}
 `;
 
-const Button = ({
+export const Button = ({
   margin,
   fill,
   disable,
@@ -91,5 +91,3 @@ const Button = ({
     </Wrapper>
   );
 };
-
-export default Button;

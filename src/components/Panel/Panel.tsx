@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import Text from "../Text/Text";
+import { Text } from "../Text/Text";
 
 interface PropTypes {
   icon: string;
@@ -52,7 +52,7 @@ const IconWrapper = styled.div`
   }
 `;
 
-const Panel = ({ icon, title }: PropTypes) => (
+export const Panel = ({ icon, title }: PropTypes) => (
   <Wrapper>
     <IconWrapper>
       <img src={icon} alt={title} width="36px" height="51px" />
@@ -60,4 +60,3 @@ const Panel = ({ icon, title }: PropTypes) => (
     <Text textAlign="center">{title}</Text>
   </Wrapper>
 );
-export default Panel;

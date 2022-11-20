@@ -2,8 +2,8 @@ import React from "react";
 import { AiFillGithub } from "react-icons/ai";
 import { MdFindInPage } from "react-icons/md";
 import styled from "styled-components";
-import Button from "./Button/Button";
-import Text from "./Text/Text";
+import { Button } from "./Button/Button";
+import { Text } from "./Text/Text";
 
 interface PropTypes {
   previewImg: string;
@@ -82,7 +82,7 @@ const Content = styled.div`
   color: ${(props) => props.theme.color.secondary};
 `;
 
-const Card = ({
+export const Card = ({
   previewImg,
   subTitle,
   title,
@@ -124,5 +124,3 @@ const Card = ({
     </Content>
   </Wrapper>
 );
-
-export default Card;

@@ -9,7 +9,7 @@ interface PropTypes {
   textAlign?: string;
 }
 
-const Text = styled.p<PropTypes>`
+export const Text = styled.p<PropTypes>`
   color: ${(props) =>
     props.color ? props.theme.color[props.color] : props.theme.color.main};
   font-size: ${(props) =>
@@ -20,5 +20,3 @@ const Text = styled.p<PropTypes>`
   margin: ${(props) => props.margin || "0.5rem 0"};
   text-align: ${(props) => props.textAlign || "left"};
 `;
-
-export default Text;

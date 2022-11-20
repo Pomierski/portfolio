@@ -93,7 +93,7 @@ const transitions = [
   },
 ];
 
-const HeroAnimation = () => {
+export const HeroAnimation = () => {
   const { color } = useTheme() as Theme;
   const accentColor = color.accent;
   const darkAccentColor = color.darkAccent;
@@ -322,5 +322,3 @@ const HeroAnimation = () => {
     </Wrapper>
   );
 };
-
-export default HeroAnimation;

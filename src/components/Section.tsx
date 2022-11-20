@@ -5,7 +5,7 @@ interface PropTypes {
   gridRow?: string;
 }
 
-const Section = styled.section<PropTypes>`
+export const Section = styled.section<PropTypes>`
   margin: ${(props) => props.theme.sectionGap} 0;
 
   @media (min-width: ${(props) => props.theme.screenSize.sm}) {
@@ -13,5 +13,3 @@ const Section = styled.section<PropTypes>`
     grid-row: ${(props) => props.gridRow || "unset"};
   }
 `;
-
-export default Section;

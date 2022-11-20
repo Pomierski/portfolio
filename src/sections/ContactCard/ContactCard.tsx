@@ -1,6 +1,6 @@
 import { useTranslation } from "react-i18next";
 import styled from "styled-components";
-import Button from "../../components/Button/Button";
+import { Button } from "../../components/Button/Button";
 
 const Wrapper = styled.div`
   width: 100%;
@@ -23,7 +23,7 @@ const TextWrapper = styled.div`
   width: fit-content;
 `;
 
-const ContactCard = () => {
+export const ContactCard = () => {
   const { t } = useTranslation();
   return (
     <Wrapper id="contact">
@@ -37,5 +37,3 @@ const ContactCard = () => {
     </Wrapper>
   );
 };
-
-export default ContactCard;

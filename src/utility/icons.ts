@@ -21,7 +21,7 @@ import sass from "../assets/logos/sass.svg";
 import ts from "../assets/logos/typescript.svg";
 import webpack from "../assets/logos/webpack.svg";
 
-const icons = {
+export const icons = {
   adobeXD,
   gatsby,
   graphql,
@@ -45,5 +45,3 @@ const icons = {
   docker,
   babel,
 };
-
-export default icons;

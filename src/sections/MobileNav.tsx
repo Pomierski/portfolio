@@ -1,9 +1,9 @@
 import React, { useEffect, useRef, useState } from "react";
 import { CgMenuGridO } from "react-icons/cg";
 import styled from "styled-components";
-import MobileMenu from "../components/MobileMenu";
-import Navlist from "../components/NavList";
-import StyledIcon from "../components/StyledIcon";
+import { MobileMenu } from "../components/MobileMenu";
+import { Navlist } from "../components/NavList";
+import { StyledIcon } from "../components/StyledIcon";
 
 interface PropTypes {
   outsideRef: React.MutableRefObject<HTMLDivElement | null>;
@@ -27,7 +27,7 @@ const AnimatedIcon = styled(CgMenuGridO)<{ $display?: boolean }>`
   transition: transform 0.25s;
 `;
 
-const MobileNav = ({ outsideRef }: PropTypes) => {
+export const MobileNav = ({ outsideRef }: PropTypes) => {
   const [display, setDisplay] = useState(false);
   const menuRef = useRef(null);
 
@@ -54,5 +54,3 @@ const MobileNav = ({ outsideRef }: PropTypes) => {
     </Wrapper>
   );
 };
-
-export default MobileNav;

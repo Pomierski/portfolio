@@ -1,6 +1,5 @@
-import React from "react";
 import styled from "styled-components";
-import Navlist from "../components/NavList";
+import { Navlist } from "../components/NavList";
 
 const Wrapper = styled.div`
   display: none;
@@ -12,10 +11,8 @@ const Wrapper = styled.div`
   }
 `;
 
-const Navbar = () => (
+export const Navbar = () => (
   <Wrapper>
     <Navlist />
   </Wrapper>
 );
-
-export default Navbar;

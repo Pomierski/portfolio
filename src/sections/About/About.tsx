@@ -1,13 +1,13 @@
 import { useTranslation } from "react-i18next";
-import Container from "../../components/Container";
-import Heading from "../../components/Heading/Heading";
-import Section from "../../components/Section";
-import Text from "../../components/Text/Text";
-import Timeline from "../../components/Timeline";
+import { Container } from "../../components/Container";
+import { Heading } from "../../components/Heading/Heading";
+import { Section } from "../../components/Section";
+import { Text } from "../../components/Text/Text";
+import { Timeline } from "../../components/Timeline";
 
 const currentYear = new Date().getFullYear();
 
-const About = () => {
+export const About = () => {
   const { t } = useTranslation();
   return (
     <Section id="about" gridCol="1 / 3">
@@ -48,5 +48,3 @@ const About = () => {
     </Section>
   );
 };
-
-export default About;
