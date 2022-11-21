@@ -1,6 +1,7 @@
 import React, { useEffect, useRef, useState } from "react";
 import { CgMenuGridO } from "react-icons/cg";
 import styled from "styled-components";
+import { Button } from "../../components/Button/Button";
 import { MobileMenu } from "../../components/MobileMenu";
 import { Navlist } from "../../components/NavList";
 import { StyledIcon } from "../../components/StyledIcon";
@@ -15,6 +16,7 @@ const Wrapper = styled.div`
   display: flex;
   padding-top: 2rem;
   z-index: 2;
+  justify-content: flex-end;
   @media (min-width: ${(props) =>
       props.theme.screenSize.sm}) and (min-height: ${(props) =>
       props.theme.horizontalHeightLimit}) {
@@ -49,9 +51,15 @@ export const MobileNav = ({ outsideRef }: PropTypes) => {
       <MobileMenu $display={display} ref={menuRef}>
         <Navlist items={navItems} />
       </MobileMenu>
-      <StyledIcon margin="0 -3px 0 auto" fontSize="2.5rem" onClick={toggleMenu}>
-        <AnimatedIcon $display={display} />
-      </StyledIcon>
+      <Button noBorder noHover>
+        <StyledIcon
+          margin="0 -3px 0 auto"
+          fontSize="2.5rem"
+          onClick={toggleMenu}
+        >
+          <AnimatedIcon $display={display} />
+        </StyledIcon>
+      </Button>
     </Wrapper>
   );
 };

@@ -58,11 +58,12 @@ const ButtonsWrapper = styled.div`
   justify-content: space-between;
   margin-bottom: 5rem;
 
-  @media (min-width: ${(props) => props.theme.screenSize.lg}) {
+  @media (min-width: ${(props) => props.theme.screenSize.sm}) {
+    width: 100%;
+    gap: 1rem;
     grid-row: 2;
     grid-column: 1;
-    width: 100%;
-    padding-right: 9rem;
+    justify-content: flex-start;
   }
 `;
 
@@ -92,17 +93,18 @@ const HeroImg = styled.div`
 `;
 
 const Wrapper = styled.div`
+  overflow: hidden;
   align-items: center;
   grid-column: 1 / 3;
   width: 100%;
   display: grid;
   margin-top: -4.5rem;
-  height: calc(${window.innerHeight}px);
+  min-height: calc(${window.innerHeight}px);
   @media (min-width: ${(props) =>
       props.theme.screenSize.sm}) and (min-height: ${(props) =>
       props.theme.horizontalHeightLimit}) {
     margin-top: 0;
-    height: calc(100vh - ${(props) => props.theme.navbarHeight});
+    min-height: calc(100vh - ${(props) => props.theme.navbarHeight});
     grid-template-columns: repeat(2, 1fr);
   }
   @media (min-width: ${(props) => props.theme.screenSize.lg}) {

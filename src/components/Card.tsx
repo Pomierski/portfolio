@@ -25,13 +25,8 @@ const Wrapper = styled.div`
   box-shadow: 0 15px 24px -10px rgb(0 0 0 / 15%);
   text-align: left;
   border: 1px solid ${(props) => props.theme.color.darkBg};
-  //transition: transform 0.5s;
   @media (min-width: ${(props) => props.theme.screenSize.sm}) {
     width: 90%;
-  }
-
-  &:hover {
-    //border: 1px solid ${(props) => props.theme.color.accent};
   }
 `;
 

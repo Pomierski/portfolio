@@ -8,6 +8,12 @@ import { Section } from "../../components/Section";
 import { Text } from "../../components/Text/Text";
 import { SectionIds } from "../sectionIds";
 
+const StyledText = styled(Text)`
+  @media (min-width: ${(props) => props.theme.screenSize.sm}) {
+    min-height: 2.8rem;
+  }
+`
+
 const PanelWrapper = styled.div`
   padding: 1rem 0 1rem 0;
   display: grid;
@@ -39,9 +45,12 @@ export const Skills = () => {
       </Container>
       <Container>
         <div>
-          <Text color="secondary">{t("skills.specialization")}</Text>
+          <StyledText color="secondary">
+            {t("skills.specialization")}
+          </StyledText>
           <PanelWrapper>
             <Panel icon={icons.react} title="React" />
+            <Panel icon={icons.stencil} title="Stencil" />
             <Panel icon={icons.ts} title="Typescript" />
             <Panel icon={icons.js} title="Javascript" />
             <Panel icon={icons.jest} title="Jest" />
@@ -53,7 +62,9 @@ export const Skills = () => {
           </PanelWrapper>
         </div>
         <div>
-          <Text color="secondary">{t("skills.additional")}</Text>
+          <StyledText color="secondary">
+            {t("skills.additional")}
+          </StyledText>
           <PanelWrapper>
             <Panel icon={icons.angular} title="Angular" />
             <Panel icon={icons.gatsby} title="Gatsby" />

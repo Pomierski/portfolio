@@ -7,6 +7,7 @@ interface PropTypes {
   padding?: string;
   margin?: string;
   textAlign?: string;
+  minHeight?: string;
 }
 
 export const Text = styled.p<PropTypes>`
@@ -19,4 +20,5 @@ export const Text = styled.p<PropTypes>`
   padding: ${(props) => props.padding || "0"};
   margin: ${(props) => props.margin || "0.5rem 0"};
   text-align: ${(props) => props.textAlign || "left"};
+  min-height: ${(props) => props.minHeight || "auto"};
 `;

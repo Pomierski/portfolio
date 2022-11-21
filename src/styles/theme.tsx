@@ -21,7 +21,7 @@ export const theme = {
   sectionGap: "2.5rem",
   screenSize: {
     gFold: "280px",
-    sm: "576px",
+    sm: "790px",
     md: "835px",
     lg: "992px",
     xl: "1200px",

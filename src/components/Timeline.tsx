@@ -61,18 +61,18 @@ const StyledText = styled(Text)`
 export const Timeline = ({ positions }: PropTypes) => {
   return (
     <Wrapper>
-      {positions.map((el, index) => (
+      {positions.map(({title, company, description}, index) => (
         <React.Fragment key={index}>
           <TimelineWrapper>
             <Point />
             <Line />
           </TimelineWrapper>
           <TextWrapper>
-            <Title fontSize="sm">{el.title}</Title>
+            <Title fontSize="sm">{title}</Title>
             <StyledText fontSize="xs" margin="0">
-              {el.company}
+              {company}
             </StyledText>
-            <StyledText color="secondary">{el.description}</StyledText>
+            <StyledText color="secondary">{description}</StyledText>
           </TextWrapper>
         </React.Fragment>
       ))}

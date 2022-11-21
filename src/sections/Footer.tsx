@@ -4,7 +4,7 @@ import { StyledIcon } from "../components/StyledIcon";
 import { Text } from "../components/Text/Text";
 
 const Wrapper = styled.footer`
-  width: fit-content;
+  width: 9rem;
   margin: 0 auto;
   text-align: center;
   @media (min-width: ${(props) => props.theme.screenSize.sm}) {

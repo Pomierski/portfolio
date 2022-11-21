@@ -20,6 +20,7 @@ import rtl from "./logos/rtl.png";
 import sass from "./logos/sass.svg";
 import ts from "./logos/typescript.svg";
 import webpack from "./logos/webpack.svg";
+import stencil from "./logos/stencil.svg";
 
 export const icons = {
   adobeXD,
@@ -44,4 +45,5 @@ export const icons = {
   git,
   docker,
   babel,
+  stencil,
 };
