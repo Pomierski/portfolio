@@ -1,19 +1,22 @@
 import styled, { css, useTheme } from "styled-components";
-import { Theme } from "../styles/theme";
-import StyledIcon from "./StyledIcon";
+import { Theme } from "../../styles/theme";
+import { StyledIcon } from "../StyledIcon";
 
 interface PropTypes {
   margin?: string;
   fill?: boolean;
   center?: boolean;
-  disable?: boolean | string;
+  disable?: boolean;
   icon?: React.ReactNode;
   href?: string;
   children?: React.ReactNode;
+  noBorder?: boolean;
+  noHover?: boolean;
 }
 
-const Wrapper = styled.a<Partial<PropTypes>>`
-  border: 1px solid ${(props) => props.theme.color.accent};
+const Wrapper = styled.a<PropTypes>`
+  border: ${(props) =>
+    props.noBorder ? "0" : `1px solid ${props.theme.color.accent}`};
   background: none;
   color: ${(props) => props.theme.color.accent};
   padding: 8px 16px;
@@ -31,6 +34,15 @@ const Wrapper = styled.a<Partial<PropTypes>>`
     background-color: ${(props) => props.theme.color.darkBg};
     transform: scale(1.05);
   }
+
+  ${(props) =>
+    props.noHover &&
+    css`
+      &:hover {
+        background-color: inherit;
+        transform: none;
+      }
+    `}
 
   ${(props) =>
     props.fill &&
@@ -60,7 +72,7 @@ const Wrapper = styled.a<Partial<PropTypes>>`
     `}
 `;
 
-const Button = ({
+export const Button = ({
   margin,
   fill,
   disable,
@@ -68,6 +80,8 @@ const Button = ({
   children,
   icon,
   href,
+  noBorder,
+  noHover,
 }: PropTypes) => {
   const theme = useTheme() as Theme;
   return (
@@ -77,10 +91,13 @@ const Button = ({
       disable={disable}
       center={center}
       href={href}
+      noBorder={noBorder}
+      noHover={noHover}
     >
       {children}
       {icon ? (
         <StyledIcon
+          data-testid="button-icon"
           color={disable ? theme.color.secondary : theme.color.accent}
           margin="0 0 0 .25rem"
         >
@@ -90,5 +107,3 @@ const Button = ({
     </Wrapper>
   );
 };
-
-export default Button;

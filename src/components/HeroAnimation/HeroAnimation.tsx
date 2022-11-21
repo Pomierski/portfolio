@@ -1,5 +1,4 @@
 import { motion } from "framer-motion";
-import React from "react";
 import styled, { useTheme } from "styled-components";
 import { Theme } from "../../styles/theme";
 import { CodeSnippets } from "./CodeSnippets";
@@ -94,7 +93,7 @@ const transitions = [
   },
 ];
 
-const HeroAnimation = () => {
+export const HeroAnimation = () => {
   const { color } = useTheme() as Theme;
   const accentColor = color.accent;
   const darkAccentColor = color.darkAccent;
@@ -323,5 +322,3 @@ const HeroAnimation = () => {
     </Wrapper>
   );
 };
-
-export default HeroAnimation;

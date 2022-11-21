@@ -1,6 +1,17 @@
-import React from "react";
+import { useTranslation } from "react-i18next";
 import { Link } from "react-scroll";
 import styled from "styled-components";
+
+interface PropTypes {
+  items: NavListItem[];
+}
+
+export interface NavListItem {
+  translaionPath: string;
+  linkTo: string;
+  smooth?: boolean;
+  offset?: number;
+}
 
 const List = styled.ul`
   list-style-type: none;
@@ -28,24 +39,18 @@ const ListItem = styled.li`
   }
 `;
 
-const Navlist = () => (
-  <List>
-    <ListItem>
-      <Link to="skills" smooth offset={-10}>
-        Technologie
-      </Link>
-    </ListItem>
-    <ListItem>
-      <Link to="projects" smooth offset={-10}>
-        Projekty
-      </Link>
-    </ListItem>
-    <ListItem>
-      <Link to="contact" smooth>
-        Kontakt
-      </Link>
-    </ListItem>
-  </List>
-);
+export const Navlist = ({ items }: PropTypes) => {
+  const { t } = useTranslation();
 
-export default Navlist;
+  return (
+    <List>
+      {items.map((item, key) => (
+        <ListItem key={key}>
+          <Link to={item.linkTo} smooth={item.smooth} offset={item.offset ?? 0}>
+            {t(item.translaionPath)}
+          </Link>
+        </ListItem>
+      ))}
+    </List>
+  );
+};

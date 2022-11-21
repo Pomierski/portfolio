@@ -6,7 +6,7 @@ interface PropTypes {
   color?: string | undefined;
 }
 
-const StyledIcon = styled.span<PropTypes>`
+export const StyledIcon = styled.span<PropTypes>`
   color: ${(props) => props.color || props.theme.color.accent};
   font-size: ${(props) => props.fontSize || "1rem"};
   margin: ${(props) => props.margin || "0"};
@@ -18,5 +18,3 @@ const StyledIcon = styled.span<PropTypes>`
     height: auto;
   }
 `;
-
-export default StyledIcon;

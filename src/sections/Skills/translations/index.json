@@ -1,0 +1,14 @@
+{
+  "pl": {
+    "heading": "Technologie",
+    "description": "Wykorzystując doświadczenie w wymienionych technologiach staram tworzyć najlepsze i zoptymalizowane rozwiązania. Potrafię szybko analizować kod napisany w oparciu o te technologię i odnaleźć się w złozonych projektach.",
+    "specialization": "Technologiach w których się specjalizuję.",
+    "additional": "Technologie z którymi miałem okazje pracować i wykorzystuję w zalezności od projektu."
+  },
+  "en": {
+    "heading": "Skills",
+    "description": "Using my experience in the mentioned technologies, I strive to create the best and optimized solutions. I can quickly analyze code written based on these technologies and find my way through complex projects.",
+    "specialization": "The technologies I specialize in.",
+    "additional": "Technologies I have had the opportunity to work with and use depending on the project."
+  }
+}

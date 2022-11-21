@@ -1,11 +1,10 @@
-import React from "react";
 import { AiFillGithub, AiFillLinkedin } from "react-icons/ai";
 import styled from "styled-components";
-import StyledIcon from "../components/StyledIcon";
-import Text from "../components/Text";
+import { StyledIcon } from "../components/StyledIcon";
+import { Text } from "../components/Text/Text";
 
 const Wrapper = styled.footer`
-  width: fit-content;
+  width: 9rem;
   margin: 0 auto;
   text-align: center;
   @media (min-width: ${(props) => props.theme.screenSize.sm}) {
@@ -18,7 +17,7 @@ const IconsWrapper = styled.div`
   justify-content: space-evenly;
 `;
 
-const Footer = () => (
+export const Footer = () => (
   <Wrapper>
     <IconsWrapper>
       <StyledIcon
@@ -41,5 +40,3 @@ const Footer = () => (
     <Text fontSize="xs">© {new Date().getFullYear()} Piotr Pomierski.</Text>
   </Wrapper>
 );
-
-export default Footer;

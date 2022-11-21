@@ -1,4 +1,3 @@
-import React from "react";
 import { BiChevronDown } from "react-icons/bi";
 import styled, { keyframes } from "styled-components";
 
@@ -27,10 +26,8 @@ const Wrapper = styled.div`
   grid-column: 1 / 3;
 `;
 
-const ScrollDownArrow = () => (
+export const ScrollDownArrow = () => (
   <Wrapper>
     <BiChevronDown />
   </Wrapper>
 );
-
-export default ScrollDownArrow;

@@ -4,7 +4,7 @@ interface PropTypes {
   $display?: boolean;
 }
 
-const MobileMenu = styled.div<PropTypes>`
+export const MobileMenu = styled.div<PropTypes>`
   left: 0;
   position: fixed;
   width: 100%;
@@ -20,5 +20,3 @@ const MobileMenu = styled.div<PropTypes>`
   transition: transform 0.5s;
   top: 0;
 `;
-
-export default MobileMenu;

@@ -1,5 +1,5 @@
-import React from "react";
 import styled from "styled-components";
+import { Text } from "../Text/Text";
 
 interface PropTypes {
   icon: string;
@@ -42,6 +42,7 @@ const IconWrapper = styled.div`
 
   & > img {
     min-height: 1.5rem;
+    object-fit: scale-down;
   }
   @media (min-width: ${(props) => props.theme.screenSize.sm}) {
     width: 2rem;
@@ -52,13 +53,11 @@ const IconWrapper = styled.div`
   }
 `;
 
-const Panel = ({ icon, title }: PropTypes) => (
+export const Panel = ({ icon, title }: PropTypes) => (
   <Wrapper>
     <IconWrapper>
       <img src={icon} alt={title} width="36px" height="51px" />
     </IconWrapper>
-    <p>{title}</p>
+    <Text textAlign="center">{title}</Text>
   </Wrapper>
 );
-
-export default Panel;

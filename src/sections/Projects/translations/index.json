@@ -1,0 +1,64 @@
+{
+  "pl": {
+    "heading": "Projekty",
+    "marbond": {
+      "subTitle": "Strona wizytówka",
+      "content": "Strona wizytkówka. Zaprojektowana i napisana dla firmy Marbond."
+    },
+    "myAnimeReminder": {
+      "subTitle": "Chrome extension",
+      "content": "Rozszerzenie do przeglądarek opartych na Chromium. Przy wykorzystaniu JikanAPI i SyncStorage przypomina o premierach odcinków anime."
+    },
+    "silver": {
+      "subTitle": "Strona wizytówka",
+      "content": "Szablon strony WWW. Stworzony przy użyciu własnego projektu. Napisany w HTMLu z użyciem SCSS. Jako bundler został wykorzystany Parcel."
+    },
+    "organize": {
+      "subTitle": "NodeJS CLI",
+      "content": "Organize to NodeJS CLI, służące do organizowania plików w osobne foldery. Posiada różne opcje m.in. ignorowanie plików, przeniesienie tylko wybranego rodzaju plików"
+    },
+    "suggestMeAnime": {
+      "subTitle": "React App",
+      "content": "SuggestMeAnime to graficzny interfejs dla JikanAPI. Pozwala wyszukiwać dostepne pozycję w API. Napisane przy użyciu React i Redux"
+    },
+    "pomierski": {
+      "subTitle": "Gatsby blog",
+      "content": "Blog napisany przy użyciu Gatsby.js oraz Headless CMS (GraphCMS)"
+    },
+    "yayNay": {
+      "subTitle": "Projekt fullstack",
+      "content": "Aplikacja do tworzenia ankiet z dwoma opcjami - yay lub nay. Technologie wykorzystane do REST Api to NodeJS z TypeScript oraz MySQL. Front-end napisany w React."
+    }
+  },
+  "en": {
+    "heading": "Projects",
+    "marbond": {
+      "subTitle": "Company website",
+      "content": "Website designed and developed for Marbond company"
+    },
+    "myAnimeReminder": {
+      "subTitle": "Chrome extension",
+      "content": "An extension for Chromium based browsers which reminds you of anime episode premieres."
+    },
+    "silver": {
+      "subTitle": "Website template",
+      "content": "Website template. Created using an own design. Written in HTML and SCSS and Parcel.js as bundler."
+    },
+    "organize": {
+      "subTitle": "NodeJS CLI",
+      "content": "Organize is a NodeJS CLI for organizing files into separate folders. It has various options including ignoring files and moving only a selected type of files"
+    },
+    "suggestMeAnime": {
+      "subTitle": "React App",
+      "content": "SuggestMeAnime is a graphical interface for JikanAPI. It allows you to search for an available item in the API. Written using React and Redux"
+    },
+    "pomierski": {
+      "subTitle": "Gatsby blog",
+      "content": "Blog written using Gatsby.js and Headless CMS (GraphCMS)"
+    },
+    "yayNay": {
+      "subTitle": "Fullstack project",
+      "content": "An application for creating surveys with two options - yay or nay. Technologies used for REST Api are NodeJS with TypeScript and MySQL. Front-end written in React."
+    }
+  }
+}

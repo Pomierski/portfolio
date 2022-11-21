@@ -1,6 +1,6 @@
 import styled from "styled-components";
 
-const MainHeading = styled.h1`
+export const MainHeading = styled.h1`
   color: #fff;
   letter-spacing: 4px;
   display: inline-block;
@@ -17,5 +17,3 @@ const MainHeading = styled.h1`
     line-height: ${(props) => props.theme.fontSize.xl};
   }
 `;
-
-export default MainHeading;

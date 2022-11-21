@@ -1,6 +1,6 @@
 import styled from "styled-components";
 
-const TransparentLink = styled.a`
+export const TransparentLink = styled.a`
   color: inherit;
   text-decoration: none;
 
@@ -12,5 +12,3 @@ const TransparentLink = styled.a`
     color: inherit;
   }
 `;
-
-export default TransparentLink;

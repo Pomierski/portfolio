@@ -1,10 +1,11 @@
 import React from "react";
 import styled from "styled-components";
-import Text from "./Text";
+import { Text } from "./Text/Text";
 
 interface Position {
   title: string;
   description: string;
+  company: string;
 }
 
 interface PropTypes {
@@ -57,23 +58,24 @@ const StyledText = styled(Text)`
   }
 `;
 
-const Timeline = ({ positions }: PropTypes) => {
+export const Timeline = ({ positions }: PropTypes) => {
   return (
     <Wrapper>
-      {positions.map((el, index) => (
+      {positions.map(({title, company, description}, index) => (
         <React.Fragment key={index}>
           <TimelineWrapper>
             <Point />
             <Line />
           </TimelineWrapper>
           <TextWrapper>
-            <Title fontSize="sm">{el.title}</Title>
-            <StyledText color="secondary">{el.description}</StyledText>
+            <Title fontSize="sm">{title}</Title>
+            <StyledText fontSize="xs" margin="0">
+              {company}
+            </StyledText>
+            <StyledText color="secondary">{description}</StyledText>
           </TextWrapper>
         </React.Fragment>
       ))}
     </Wrapper>
   );
 };
-
-export default Timeline;

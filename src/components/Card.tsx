@@ -1,12 +1,15 @@
 import React from "react";
+import { useTranslation } from "react-i18next";
 import { AiFillGithub } from "react-icons/ai";
 import { MdFindInPage } from "react-icons/md";
 import styled from "styled-components";
-import Button from "./Button";
+import { Button } from "./Button/Button";
+import { Text } from "./Text/Text";
 
 interface PropTypes {
+  contentTranslation: string;
   previewImg: string;
-  subTitle: string;
+  subTitleTranslation: string;
   title: string;
   icons: string[];
   repoUrl: string;
@@ -22,13 +25,8 @@ const Wrapper = styled.div`
   box-shadow: 0 15px 24px -10px rgb(0 0 0 / 15%);
   text-align: left;
   border: 1px solid ${(props) => props.theme.color.darkBg};
-  //transition: transform 0.5s;
   @media (min-width: ${(props) => props.theme.screenSize.sm}) {
     width: 90%;
-  }
-
-  &:hover {
-    //border: 1px solid ${(props) => props.theme.color.accent};
   }
 `;
 
@@ -44,12 +42,8 @@ const Heading = styled.h3`
   color: #fff;
 `;
 
-const SubTitle = styled.p`
-  margin: 0;
-  color: ${(props) => props.theme.color.accent};
+const SubTitle = styled(Text)`
   text-transform: uppercase;
-  font-weight: 300;
-  font-size: 0.8rem;
 `;
 
 const IconsWrapper = styled.div`
@@ -85,45 +79,48 @@ const Content = styled.div`
   color: ${(props) => props.theme.color.secondary};
 `;
 
-const Card = ({
+export const Card = ({
   previewImg,
-  subTitle,
+  subTitleTranslation,
+  contentTranslation,
   title,
   icons,
   repoUrl,
   liveUrl,
-  children,
-}: PropTypes) => (
-  <Wrapper>
-    <Preview previewImg={previewImg}>
-      <IconsWrapper>
-        {icons
-          ? icons.map((icon, key) => (
-              <Icon src={icon} alt="" key={key} width="36px" height="51px" />
-            ))
-          : null}
-      </IconsWrapper>
-    </Preview>
-    <Content>
-      <header>
-        <SubTitle>{subTitle}</SubTitle>
-        <Heading>{title}</Heading>
-      </header>
-      <p>{children}</p>
-      <ButtonsWrapper>
-        <Button href={repoUrl} margin="0 .5rem 0 0" icon={<AiFillGithub />}>
-          Github
-        </Button>
-        <Button
-          href={liveUrl || "#"}
-          disable={!liveUrl}
-          icon={<MdFindInPage />}
-        >
-          Live
-        </Button>
-      </ButtonsWrapper>
-    </Content>
-  </Wrapper>
-);
-
-export default Card;
+}: PropTypes) => {
+  const { t } = useTranslation();
+  return (
+    <Wrapper>
+      <Preview previewImg={previewImg}>
+        <IconsWrapper>
+          {icons
+            ? icons.map((icon, key) => (
+                <Icon src={icon} alt="" key={key} width="36px" height="51px" />
+              ))
+            : null}
+        </IconsWrapper>
+      </Preview>
+      <Content>
+        <header>
+          <SubTitle color="accent" margin="0" fontSize="xs">
+            {t(subTitleTranslation)}
+          </SubTitle>
+          <Heading>{title}</Heading>
+        </header>
+        <p>{t(contentTranslation)}</p>
+        <ButtonsWrapper>
+          <Button href={repoUrl} margin="0 .5rem 0 0" icon={<AiFillGithub />}>
+            Github
+          </Button>
+          <Button
+            href={liveUrl || "#"}
+            disable={!liveUrl}
+            icon={<MdFindInPage />}
+          >
+            Live
+          </Button>
+        </ButtonsWrapper>
+      </Content>
+    </Wrapper>
+  );
+};
