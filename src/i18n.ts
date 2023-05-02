@@ -1,11 +1,11 @@
 import i18n from "i18next";
 import LanguageDetector from "i18next-browser-languagedetector";
 import { initReactI18next } from "react-i18next";
-import * as aboutTranslations from "./sections/About/translations/index.json";
-import * as contactTranslations from "./sections/ContactCard/translations/index.json";
-import * as heroTranslations from "./sections/Hero/translations/index.json";
-import * as projectsTranslations from "./sections/Projects/translations/index.json";
-import * as skillsTranslations from "./sections/Skills/translations/index.json";
+import aboutTranslations from "./sections/About/translations/index.json";
+import contactTranslations from "./sections/ContactCard/translations/index.json";
+import heroTranslations from "./sections/Hero/translations/index.json";
+import projectsTranslations from "./sections/Projects/translations/index.json";
+import skillsTranslations from "./sections/Skills/translations/index.json";
 
 i18n
   .use(LanguageDetector)
