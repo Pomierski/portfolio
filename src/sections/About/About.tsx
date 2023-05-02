@@ -13,7 +13,7 @@ export const About = () => {
   const { t } = useTranslation();
   const getCurrentPositionEmploymentTime = () => {
     const monthDiff = getMonthDiffUntillNow(currentPositionStartDate);
-    const years = monthDiff / 12;
+    const years = Math.floor(monthDiff / 12);
     const months = monthDiff % 12;
     const fullTime = [];
 
