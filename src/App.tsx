@@ -3,6 +3,7 @@ import { ThemeProvider } from "styled-components";
 import { Container } from "./components/Container";
 import { About } from "./sections/About/About";
 import { ContactCard } from "./sections/ContactCard/ContactCard";
+import { Contributions } from "./sections/Contributions/Contributions";
 import { Footer } from "./sections/Footer";
 import { Hero } from "./sections/Hero/Hero";
 import { MobileNav } from "./sections/Navbar/MobileNav";
@@ -23,6 +24,7 @@ function App() {
           <About />
           <Skills />
           <Projects />
+          <Contributions />
           <ContactCard />
           <Footer />
         </Container>
