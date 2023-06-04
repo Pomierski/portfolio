@@ -15,7 +15,7 @@
     "october": "paź",
     "november": "lis",
     "december": "gru",
-    "current": "obecnie",
+    "currently": "obecnie",
     "months": "{{count}} mieś.",
     "year_one": "{{count}} rok",
     "year_other": "{{count}} lat"
