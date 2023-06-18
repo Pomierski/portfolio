@@ -23,8 +23,8 @@ function App() {
           <Hero />
           <About />
           <Skills />
-          <Projects />
           <Contributions />
+          <Projects />
           <ContactCard />
           <Footer />
         </Container>

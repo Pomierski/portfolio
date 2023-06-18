@@ -28,4 +28,7 @@ export const theme = {
   },
   horizontalHeightLimit: "400px",
   navbarHeight: "4rem",
+  boxShadow: {
+    default: "0 15px 24px -10px rgb(0 0 0 / 15%)",
+  },
 };

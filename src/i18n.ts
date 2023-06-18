@@ -3,6 +3,7 @@ import LanguageDetector from "i18next-browser-languagedetector";
 import { initReactI18next } from "react-i18next";
 import aboutTranslations from "./sections/About/translations/index.json";
 import contactTranslations from "./sections/ContactCard/translations/index.json";
+import contributionsTranslations from "./sections/Contributions/translations/index.json";
 import heroTranslations from "./sections/Hero/translations/index.json";
 import projectsTranslations from "./sections/Projects/translations/index.json";
 import skillsTranslations from "./sections/Skills/translations/index.json";
@@ -19,6 +20,7 @@ i18n
       pl: {
         translation: {
           contact: contactTranslations.pl,
+          contributions: contributionsTranslations.pl,
           about: aboutTranslations.pl,
           hero: heroTranslations.pl,
           projects: projectsTranslations.pl,
@@ -28,6 +30,7 @@ i18n
       en: {
         translation: {
           contact: contactTranslations.en,
+          contributions: contributionsTranslations.en,
           about: aboutTranslations.en,
           hero: heroTranslations.en,
           projects: projectsTranslations.en,

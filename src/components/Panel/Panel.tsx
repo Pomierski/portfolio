@@ -15,7 +15,7 @@ const Wrapper = styled.div`
   padding: 1rem;
   flex-direction: column;
   font-size: 0.8rem;
-  box-shadow: 0 15px 24px -10px rgb(0 0 0 / 15%);
+  box-shadow: ${(props) => props.theme.boxShadow.default}
   border-left: 2px solid ${(props) => props.theme.color.darkBg};
   border-bottom: 2px solid ${(props) => props.theme.color.darkBg};
   transition: 0.5s;
