@@ -11,6 +11,15 @@ import { SectionIds } from "../sectionIds";
 
 const cards = [
   {
+    title: "Changlelog.md helper",
+    subTitleTranslation: "projects.changelog_md.subTitle",
+    previewImg: projectImage.changelogMd,
+    icons: [icons.ts, icons.jest],
+    contentTranslation: "projects.changelog_md.content",
+    repoUrl: "https://github.com/Pomierski/changelog-md-helper",
+    liveUrl: "https://www.npmjs.com/package/changelog-md-helper",
+  },
+  {
     title: "Marbond.pl",
     subTitleTranslation: "projects.marbond.subTitle",
     previewImg: projectImage.marbond,
@@ -23,7 +32,7 @@ const cards = [
     title: "MyAnimeReminder",
     subTitleTranslation: "projects.myAnimeReminder.subTitle",
     previewImg: projectImage.myAnimeReminder,
-    icons: [icons.react],
+    icons: [icons.react, icons.ts],
     contentTranslation: "projects.myAnimeReminder.content",
     repoUrl: "https://github.com/Pomierski/MyAnimeReminder",
     liveUrl:
@@ -50,7 +59,7 @@ const cards = [
     title: "Organize",
     subTitleTranslation: "projects.organize.subTitle",
     previewImg: projectImage.organize,
-    icons: [icons.nodejs],
+    icons: [icons.nodejs, icons.ts],
     contentTranslation: "projects.organize.content",
     repoUrl: "https://github.com/Pomierski/organize",
     liveUrl: "https://github.com/Pomierski/organize",
@@ -59,7 +68,7 @@ const cards = [
     title: "SuggestMeAnime",
     subTitleTranslation: "projects.suggestMeAnime.subTitle",
     previewImg: projectImage.suggestMeAnime,
-    icons: [icons.react, icons.redux],
+    icons: [icons.react, icons.redux, icons.ts],
     contentTranslation: "projects.suggestMeAnime.content",
     repoUrl: "https://github.com/Pomierski/SuggestMeAnime",
     liveUrl: "https://pomierski.github.io/SuggestMeAnime",
