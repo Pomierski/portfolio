@@ -1,34 +1,35 @@
 import { useTranslation } from "react-i18next";
 import styled from "styled-components";
 import { Container } from "../../components/Container";
-import { Contribution } from "../../components/Contribution";
+import { Contribution, ContributionProps } from "../../components/Contribution";
 import { Heading } from "../../components/Heading/Heading";
 import { Section } from "../../components/Section";
 import { Text } from "../../components/Text/Text";
 
-const contirbutionsData = [
+const contirbutionsData: ContributionProps[] = [
   {
     repoName: "stable-diffusion-webui",
     repoAuthor: "AUTOMATIC1111",
-    repoUrl: "https://github.com/AUTOMATIC1111/stable-diffusion-webui",
+    contributionUrl:
+      "https://github.com/AUTOMATIC1111/stable-diffusion-webui/pull/7412",
     stars: 84000,
   },
   {
     repoName: "grafana",
     repoAuthor: "grafana",
-    repoUrl: "https://github.com/grafana/grafana",
+    contributionUrl: "https://github.com/grafana/grafana/pull/54389",
     stars: 55800,
   },
   {
     repoName: "DOMPurify",
     repoAuthor: "cure53",
-    repoUrl: "https://github.com/cure53/DOMPurify",
+    contributionUrl: "https://github.com/cure53/DOMPurify/pull/732",
     stars: 11200,
   },
   {
     repoName: "DreamBerd",
     repoAuthor: "TodePond",
-    repoUrl: "https://github.com/TodePond/DreamBerd",
+    contributionUrl: "https://github.com/TodePond/DreamBerd/pull/46",
     stars: 2200,
   },
 ];

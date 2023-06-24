@@ -8,10 +8,12 @@ import { TransparentLink } from "./TransparentLink";
 interface Props {
   repoName: string;
   repoAuthor: string;
-  repoUrl: string;
+  contributionUrl: string;
   stars: number;
   contibutionsAmount?: number;
 }
+
+export type { Props as ContributionProps };
 
 const Wrapper = styled.div`
   display: flex;
@@ -32,7 +34,7 @@ const HeaderWrapper = styled.div`
 export const Contribution = ({
   repoName,
   repoAuthor,
-  repoUrl,
+  contributionUrl: repoUrl,
   stars,
   contibutionsAmount = 1,
 }: Props): JSX.Element => {
