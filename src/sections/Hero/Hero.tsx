@@ -98,8 +98,8 @@ const Wrapper = styled.div`
   grid-column: 1 / 3;
   width: 100%;
   display: grid;
+  height: ${window.innerHeight}px;
   margin-top: -4.5rem;
-  min-height: calc(${window.innerHeight}px);
   @media (min-width: ${(props) =>
       props.theme.screenSize.sm}) and (min-height: ${(props) =>
       props.theme.horizontalHeightLimit}) {

@@ -3,6 +3,7 @@ import { Theme } from "../../styles/theme";
 import { StyledIcon } from "../StyledIcon";
 
 interface PropTypes {
+  padding?: string;
   margin?: string;
   fill?: boolean;
   center?: boolean;
@@ -19,7 +20,7 @@ const Wrapper = styled.a<PropTypes>`
     props.noBorder ? "0" : `1px solid ${props.theme.color.accent}`};
   background: none;
   color: ${(props) => props.theme.color.accent};
-  padding: 8px 16px;
+  padding: ${(props) => props.padding || "8px 16px"};
   display: flex;
   justify-content: center;
   align-items: center;
@@ -81,6 +82,7 @@ export const Button = ({
   icon,
   href,
   noBorder,
+  padding,
   noHover,
 }: PropTypes) => {
   const theme = useTheme() as Theme;
@@ -93,6 +95,7 @@ export const Button = ({
       href={href}
       noBorder={noBorder}
       noHover={noHover}
+      padding={padding}
     >
       {children}
       {icon ? (

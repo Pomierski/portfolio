@@ -29,8 +29,12 @@ const TimelineWrapper = styled.div`
 
 const TextWrapper = styled.div`
   display: grid;
-  grid-template-rows: 2.5rem 1fr;
+  grid-template-rows: 5.5rem 1fr;
   grid-column: 2;
+
+  @media (min-width: ${(props) => props.theme.screenSize.sm}) {
+    grid-template-rows: 4.5rem 1fr;
+  }
 `;
 
 const Point = styled.div`
@@ -51,28 +55,25 @@ const Title = styled(Text)`
   align-items: center;
 `;
 
-const StyledText = styled(Text)`
-  padding: 0.5rem 0;
-  @media (min-width: ${(props) => props.theme.screenSize.sm}) {
-    padding: 0;
-  }
-`;
-
 export const Timeline = ({ positions }: PropTypes) => {
   return (
     <Wrapper>
-      {positions.map(({title, company, description}, index) => (
+      {positions.map(({ title, company, description }, index) => (
         <React.Fragment key={index}>
           <TimelineWrapper>
             <Point />
             <Line />
           </TimelineWrapper>
           <TextWrapper>
-            <Title fontSize="sm">{title}</Title>
-            <StyledText fontSize="xs" margin="0">
-              {company}
-            </StyledText>
-            <StyledText color="secondary">{description}</StyledText>
+            <div>
+              <Title fontSize="sm">{title}</Title>
+              <Text fontSize="xs" margin="0" padding="0">
+                {company}
+              </Text>
+            </div>
+            <Text color="secondary" margin="0.5rem 0">
+              {description}
+            </Text>
           </TextWrapper>
         </React.Fragment>
       ))}

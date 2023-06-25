@@ -51,7 +51,7 @@ export const MobileNav = ({ outsideRef }: PropTypes) => {
       <MobileMenu $display={display} ref={menuRef}>
         <Navlist items={navItems} />
       </MobileMenu>
-      <Button noBorder noHover>
+      <Button noBorder noHover padding="0px">
         <StyledIcon
           margin="0 -3px 0 auto"
           fontSize="2.5rem"
