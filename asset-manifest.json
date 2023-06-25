@@ -1,19 +1,20 @@
 {
   "files": {
     "main.css": "/portfolio/static/css/main.d29d775b.css",
-    "main.js": "/portfolio/static/js/main.823a2ada.js",
-    "static/media/project-2.webp": "/portfolio/static/media/project-2.0500df7805a5bfc49a31.webp",
-    "static/media/project-3.webp": "/portfolio/static/media/project-3.92a10657d3da006d6110.webp",
-    "static/media/project-4.webp": "/portfolio/static/media/project-4.161c6c4fce96b845cae6.webp",
-    "static/media/project-5.webp": "/portfolio/static/media/project-5.dc639857f54862cf26bd.webp",
+    "main.js": "/portfolio/static/js/main.2c3cfc96.js",
+    "static/media/suggest-me-anime.webp": "/portfolio/static/media/suggest-me-anime.0500df7805a5bfc49a31.webp",
+    "static/media/pomierski-blog.webp": "/portfolio/static/media/pomierski-blog.92a10657d3da006d6110.webp",
+    "static/media/organize.webp": "/portfolio/static/media/organize.161c6c4fce96b845cae6.webp",
+    "static/media/website-template.webp": "/portfolio/static/media/website-template.dc639857f54862cf26bd.webp",
     "static/media/babel.svg": "/portfolio/static/media/babel.8d00bac2a6ce3f357b1238aa1ed4bfca.svg",
-    "static/media/project-6.webp": "/portfolio/static/media/project-6.8a34ddf11ff65517c199.webp",
-    "static/media/project-1.webp": "/portfolio/static/media/project-1.467a0e048a6f59329bb8.webp",
-    "static/media/project-7.webp": "/portfolio/static/media/project-7.9c1517ac4ce72930b9ad.webp",
+    "static/media/my-anime-reminder.webp": "/portfolio/static/media/my-anime-reminder.8a34ddf11ff65517c199.webp",
+    "static/media/marbond.webp": "/portfolio/static/media/marbond.467a0e048a6f59329bb8.webp",
+    "static/media/yaynay.webp": "/portfolio/static/media/yaynay.9c1517ac4ce72930b9ad.webp",
     "static/media/nodejs.svg": "/portfolio/static/media/nodejs.dd47e26ed1d7dddf018e5cbffc40f76d.svg",
     "static/media/jest.svg": "/portfolio/static/media/jest.af92f3a2faec96bc0a875e5dbe8c1088.svg",
     "static/media/mysql.svg": "/portfolio/static/media/mysql.43de11b606ebbf08dc0ff0a2c482c686.svg",
     "static/media/sass.svg": "/portfolio/static/media/sass.8aa78a8393470431c8036541f0708bd7.svg",
+    "static/media/changelog.webp": "/portfolio/static/media/changelog.8778f19f1767a539b1a6.webp",
     "static/media/go.svg": "/portfolio/static/media/go.83e241b0562e629eaec59993e2b230e0.svg",
     "static/media/adobexd.svg": "/portfolio/static/media/adobexd.29786ddad4c451d5384fc3465d45c5de.svg",
     "static/media/js.svg": "/portfolio/static/media/js.1d3d28798f08ea1ed7cd47f812044c4f.svg",
@@ -33,10 +34,10 @@
     "static/media/docker.svg": "/portfolio/static/media/docker.e15caa6143ae6b57509e65c98736af4a.svg",
     "static/media/gatsby.svg": "/portfolio/static/media/gatsby.a66160fe88aa8031bfb2aa5f70da5d03.svg",
     "main.d29d775b.css.map": "/portfolio/static/css/main.d29d775b.css.map",
-    "main.823a2ada.js.map": "/portfolio/static/js/main.823a2ada.js.map"
+    "main.2c3cfc96.js.map": "/portfolio/static/js/main.2c3cfc96.js.map"
   },
   "entrypoints": [
     "static/css/main.d29d775b.css",
-    "static/js/main.823a2ada.js"
+    "static/js/main.2c3cfc96.js"
   ]
 }
