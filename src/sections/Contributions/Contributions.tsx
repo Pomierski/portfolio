@@ -65,7 +65,7 @@ export const Contributions = () => {
           <Text>{t("contributions.description")}</Text>
           <Wrapper>
             {contirbutionsData.map((contibution) => (
-              <Contribution {...contibution} />
+              <Contribution {...contibution} key={contibution.repoName} />
             ))}
           </Wrapper>
         </div>

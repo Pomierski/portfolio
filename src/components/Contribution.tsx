@@ -31,6 +31,8 @@ const HeaderWrapper = styled.div`
   align-items: center;
 `;
 
+const numberFormat = new Intl.NumberFormat("en-IN");
+
 export const Contribution = ({
   repoName,
   repoAuthor,
@@ -55,7 +57,7 @@ export const Contribution = ({
       <Text color="secondary" margin="0" fontSize="xs">
         / {repoAuthor}
       </Text>
-      <Text>{stars}⭐</Text>
+      <Text>{numberFormat.format(stars)}+⭐</Text>
       <Text color="secondary" margin="0.5rem 0 0 0">
         {t("contributions.contributions", { count: contibutionsAmount })}
       </Text>
