@@ -28,6 +28,10 @@
     "yayNay": {
       "subTitle": "Projekt fullstack",
       "content": "Aplikacja do tworzenia ankiet z dwoma opcjami - yay lub nay. Technologie wykorzystane do REST Api to NodeJS z TypeScript oraz MySQL. Front-end napisany w React."
+    },
+    "changelog_md": {
+      "subTitle": "NodeJS CLI",
+      "content": "Narzędzie służące do zarządzania plikiem changelogu w projektach. Biblioteka udostępnia funkcje umożliwiające ustawienie poprawnej wersji zgodnej ze standardem Semantic Versioning (SemVer)."
     }
   },
   "en": {
@@ -59,6 +63,10 @@
     "yayNay": {
       "subTitle": "Fullstack project",
       "content": "An application for creating surveys with two options - yay or nay. Technologies used for REST Api are NodeJS with TypeScript and MySQL. Front-end written in React."
+    },
+    "changelog_md": {
+      "subTitle": "NodeJS CLI",
+      "content": "Tool for maintaining a changelog file for a software project. The library provides functions for setting the correct Semantic Versioning (SemVer) version."
     }
   }
 }

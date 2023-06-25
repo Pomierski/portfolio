@@ -22,7 +22,7 @@ const Wrapper = styled.div`
   width: 100%;
   height: auto;
   margin: 0 auto;
-  box-shadow: 0 15px 24px -10px rgb(0 0 0 / 15%);
+  box-shadow: ${(props) => props.theme.boxShadow.default};
   text-align: left;
   border: 1px solid ${(props) => props.theme.color.darkBg};
   @media (min-width: ${(props) => props.theme.screenSize.sm}) {

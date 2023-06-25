@@ -1,0 +1,14 @@
+{
+  "pl": {
+    "header": "Kontrybucje",
+    "description": "Projekty open source w których zostałem kontrybutorem",
+    "contributions_one": "{{count}} kontrybucja",
+    "contributions_other": "{{count}} kontrybucje"
+  },
+  "en": {
+    "header": "Contributions",
+    "description": "Open source projects in which I have made contributions.",
+    "contributions_one": "{{count}}+ contribution",
+    "contributions_other": "{{count}}+ contributions"
+  }
+}
