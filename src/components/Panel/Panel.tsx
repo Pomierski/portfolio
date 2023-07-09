@@ -15,15 +15,15 @@ const Wrapper = styled.div`
   padding: 1rem;
   flex-direction: column;
   font-size: 0.8rem;
-  box-shadow: ${(props) => props.theme.boxShadow.default}
-  border-left: 2px solid ${(props) => props.theme.color.darkBg};
-  border-bottom: 2px solid ${(props) => props.theme.color.darkBg};
+  box-shadow: ${(props) => props.theme.boxShadow.default};
+  border: 2px solid ${(props) => props.theme.color.darkBg};
+  border-right: 0;
+  border-top: 0;
   transition: 0.5s;
 
   &:hover {
     transform: translate(2px, -2px);
-    border-left: 2px solid ${(props) => props.theme.color.accent};
-    border-bottom: 2px solid ${(props) => props.theme.color.accent};
+    border-color: ${(props) => props.theme.color.accent};
   }
 
   @media (min-width: ${(props) => props.theme.screenSize.sm}) {
