@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/portfolio/static/css/main.d29d775b.css",
-    "main.js": "/portfolio/static/js/main.05bcc330.js",
+    "main.js": "/portfolio/static/js/main.6f97719d.js",
     "static/media/suggest-me-anime.webp": "/portfolio/static/media/suggest-me-anime.0500df7805a5bfc49a31.webp",
     "static/media/pomierski-blog.webp": "/portfolio/static/media/pomierski-blog.92a10657d3da006d6110.webp",
     "static/media/organize.webp": "/portfolio/static/media/organize.161c6c4fce96b845cae6.webp",
@@ -34,10 +34,10 @@
     "static/media/docker.svg": "/portfolio/static/media/docker.e15caa6143ae6b57509e65c98736af4a.svg",
     "static/media/gatsby.svg": "/portfolio/static/media/gatsby.a66160fe88aa8031bfb2aa5f70da5d03.svg",
     "main.d29d775b.css.map": "/portfolio/static/css/main.d29d775b.css.map",
-    "main.05bcc330.js.map": "/portfolio/static/js/main.05bcc330.js.map"
+    "main.6f97719d.js.map": "/portfolio/static/js/main.6f97719d.js.map"
   },
   "entrypoints": [
     "static/css/main.d29d775b.css",
-    "static/js/main.05bcc330.js"
+    "static/js/main.6f97719d.js"
   ]
 }
