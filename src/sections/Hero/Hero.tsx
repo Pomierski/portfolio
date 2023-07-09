@@ -57,6 +57,7 @@ const ButtonsWrapper = styled.div`
   margin: 2rem auto;
   justify-content: space-between;
   margin-bottom: 5rem;
+  padding: 0 4px;
 
   @media (min-width: ${(props) => props.theme.screenSize.sm}) {
     width: 100%;
