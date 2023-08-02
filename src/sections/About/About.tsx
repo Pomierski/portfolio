@@ -7,11 +7,10 @@ import { Timeline } from "../../components/Timeline";
 import { getMonthDiffUntillNow } from "../../utils/getMonthsDiffUntillNow";
 
 const currentYear = new Date().getFullYear();
-const currentPositionStartDate = new Date("2022-04-01");
 
 export const About = () => {
   const { t } = useTranslation();
-  const getCurrentPositionEmploymentTime = () => {
+  const getCurrentPositionEmploymentTime = (currentPositionStartDate: Date) => {
     const monthDiff = getMonthDiffUntillNow(currentPositionStartDate);
     const years = Math.floor(monthDiff / 12);
     const months = monthDiff % 12;
@@ -39,10 +38,21 @@ export const About = () => {
           <Timeline
             positions={[
               {
+                title: "Frontend developer (React)",
+                description: `${t("about.july")} 2023 - ${t(
+                  "about.currently"
+                )} · ${getCurrentPositionEmploymentTime(
+                  new Date("2023-07-01")
+                )}`,
+                company: "Shiji Poland",
+              },
+              {
                 title: "Junior frontend developer (React)",
                 description: `${t("about.april")} 2022 - ${t(
-                  "about.currently"
-                )} · ${getCurrentPositionEmploymentTime()}`,
+                  "about.june"
+                )} 2021 · ${t("about.year", { count: 1 })} ${t("about.months", {
+                  count: 4,
+                })}`,
                 company: "Shiji Poland",
               },
               {
