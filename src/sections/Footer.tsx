@@ -6,6 +6,7 @@ import { Text } from "../components/Text/Text";
 const Wrapper = styled.footer`
   width: 9rem;
   margin: 0 auto;
+  margin-bottom: 1rem;
   text-align: center;
   @media (min-width: ${(props) => props.theme.screenSize.sm}) {
     grid-column: 1 / 3;
@@ -37,6 +38,8 @@ export const Footer = () => (
         <AiFillLinkedin />
       </StyledIcon>
     </IconsWrapper>
-    <Text fontSize="xs">© {new Date().getFullYear()} Piotr Pomierski.</Text>
+    <Text fontSize="xs" textAlign="center">
+      © {new Date().getFullYear()} Piotr Pomierski.
+    </Text>
   </Wrapper>
 );
