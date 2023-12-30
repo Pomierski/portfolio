@@ -12,7 +12,7 @@ const contirbutionsData: ContributionProps[] = [
     repoAuthor: "AUTOMATIC1111",
     contributionUrl:
       "https://github.com/AUTOMATIC1111/stable-diffusion-webui/pull/7412",
-    stars: 84000,
+    stars: 116000,
   },
   {
     repoName: "grafana",
@@ -30,7 +30,7 @@ const contirbutionsData: ContributionProps[] = [
     repoName: "DreamBerd",
     repoAuthor: "TodePond",
     contributionUrl: "https://github.com/TodePond/DreamBerd/pull/46",
-    stars: 2200,
+    stars: 8800,
   },
 ];
 

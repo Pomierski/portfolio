@@ -12,7 +12,7 @@ const StyledText = styled(Text)`
   @media (min-width: ${(props) => props.theme.screenSize.sm}) {
     min-height: 2.8rem;
   }
-`
+`;
 
 const PanelWrapper = styled.div`
   padding: 1rem 0 1rem 0;
@@ -57,14 +57,12 @@ export const Skills = () => {
             <Panel icon={icons.rtl} title="RTL" />
             <Panel icon={icons.html5} title="HTML5" />
             <Panel icon={icons.css} title="CSS3" />
-            <Panel icon={icons.sass} title="Sass" />
+            <Panel icon={icons.sass} title="SCSS" />
             <Panel icon={icons.git} title="Git" />
           </PanelWrapper>
         </div>
         <div>
-          <StyledText color="secondary">
-            {t("skills.additional")}
-          </StyledText>
+          <StyledText color="secondary">{t("skills.additional")}</StyledText>
           <PanelWrapper>
             <Panel icon={icons.angular} title="Angular" />
             <Panel icon={icons.gatsby} title="Gatsby" />
