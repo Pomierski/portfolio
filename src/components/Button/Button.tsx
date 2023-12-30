@@ -68,6 +68,7 @@ const Wrapper = styled.a<PropTypes>`
       color: ${(props) => props.theme.color.secondary};
       &:hover {
         transform: none;
+        background-color: inherit;
       }
     `}
 `;

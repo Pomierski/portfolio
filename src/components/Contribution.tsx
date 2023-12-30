@@ -31,7 +31,7 @@ const HeaderWrapper = styled.div`
   align-items: center;
 `;
 
-const numberFormat = new Intl.NumberFormat("en-IN");
+const numberFormat = new Intl.NumberFormat("en-US");
 
 export const Contribution = ({
   repoName,

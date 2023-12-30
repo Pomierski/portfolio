@@ -77,6 +77,7 @@ const Content = styled.div`
   padding: 1rem 2rem;
   min-height: 16rem;
   color: ${(props) => props.theme.color.secondary};
+  border-top: 1px solid #313131;
 `;
 
 export const Card = ({
