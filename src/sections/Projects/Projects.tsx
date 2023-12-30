@@ -59,10 +59,9 @@ const cards = [
     title: "Pomierski.pl",
     subTitleTranslation: "projects.pomierski.subTitle",
     previewImg: projectImage.pomierskiBlog,
-    icons: [icons.gatsby, icons.graphql],
+    icons: [icons.js, icons.gatsby, icons.graphql],
     contentTranslation: "projects.pomierski.content",
     repoUrl: "https://github.com/Pomierski/marcin-pomierski-wiersze",
-    liveUrl: "http://www.pomierski.pl/",
   },
   {
     title: "MyAnimeReminder",
@@ -73,14 +72,6 @@ const cards = [
     repoUrl: "https://github.com/Pomierski/MyAnimeReminder",
     liveUrl:
       "https://chrome.google.com/webstore/detail/myanimereminder/ncdghgolehhmfedjdbicgdbedefglbfk",
-  },
-  {
-    title: "YayNay",
-    subTitleTranslation: "projects.yayNay.subTitle",
-    previewImg: projectImage.yayNay,
-    icons: [icons.mysql, icons.react, icons.ts, icons.nodejs],
-    contentTranslation: "projects.yayNay.content",
-    repoUrl: "https://github.com/Pomierski/yaynay",
   },
 ];
 
