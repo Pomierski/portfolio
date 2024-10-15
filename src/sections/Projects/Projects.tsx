@@ -11,6 +11,15 @@ import { SectionIds } from "../sectionIds";
 
 const cards = [
   {
+    title: "Weeble",
+    subTitleTranslation: "projects.weeble.subTitle",
+    previewImg: projectImage.weeble,
+    icons: [icons.react, icons.ts],
+    contentTranslation: "projects.weeble.content",
+    repoUrl: "https://github.com/Pomierski/weeble",
+    liveUrl: "https://pomierski.github.io/weeble/",
+  },
+  {
     title: "Changlelog.md helper",
     subTitleTranslation: "projects.changelog_md.subTitle",
     previewImg: projectImage.changelogMd,

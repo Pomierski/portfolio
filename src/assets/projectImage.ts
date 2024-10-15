@@ -5,6 +5,7 @@ import organize from "./projectImages/organize.webp";
 import pomierskiBlog from "./projectImages/pomierski-blog.webp";
 import suggestMeAnime from "./projectImages/suggest-me-anime.webp";
 import silver from "./projectImages/website-template.webp";
+import weeble from "./projectImages/weeble.webp";
 import yayNay from "./projectImages/yaynay.webp";
 
 export const projectImage = {
@@ -15,5 +16,6 @@ export const projectImage = {
   silver,
   myAnimeReminder,
   yayNay,
-  changelogMd
+  changelogMd,
+  weeble,
 };

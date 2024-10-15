@@ -1,6 +1,10 @@
 {
   "pl": {
     "heading": "Projekty",
+    "weeble": {
+      "subTitle": "React App",
+      "content": "Anime wersja Wordle, w której gracze zgadują tytuły anime zamiast słów. Każda próba ujawnia wskazówki dotyczące tytułu, sprawdzając wiedzę graczy o anime w codziennym formacie łamigłówki."
+    },
     "marbond": {
       "subTitle": "Strona wizytówka",
       "content": "Strona wizytkówka. Zaprojektowana i napisana dla firmy Marbond."
@@ -36,6 +40,10 @@
   },
   "en": {
     "heading": "Projects",
+    "weeble": {
+      "subTitle": "React App",
+      "content": "Anime-themed twist on Wordle, where players guess anime titles instead of words. Each guess reveals clues about the title, challenging players anime knowledge in a daily puzzle format."
+    },
     "marbond": {
       "subTitle": "Company website",
       "content": "Website designed and developed for Marbond company"
