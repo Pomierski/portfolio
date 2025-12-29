@@ -164,7 +164,7 @@ export const Hero = () => {
           >
             Linkedin
           </Button>
-          <Button href="#" icon={<AiOutlinePaperClip />} disable>
+          <Button href="https://dev.to/piotr_pomierski" icon={<AiOutlinePaperClip />}>
             Blog
           </Button>
         </ButtonsWrapper>

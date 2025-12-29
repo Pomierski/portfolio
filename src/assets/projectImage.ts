@@ -7,6 +7,7 @@ import suggestMeAnime from "./projectImages/suggest-me-anime.webp";
 import silver from "./projectImages/website-template.webp";
 import weeble from "./projectImages/weeble.webp";
 import yayNay from "./projectImages/yaynay.webp";
+import devTo from "./projectImages/devto.webp";
 
 export const projectImage = {
   marbond,
@@ -18,4 +19,5 @@ export const projectImage = {
   yayNay,
   changelogMd,
   weeble,
+  devTo
 };

@@ -10,6 +10,15 @@ import { Section } from "../../components/Section";
 import { SectionIds } from "../sectionIds";
 
 const cards = [
+   {
+    title: "Centralized documentation",
+    subTitleTranslation: "projects.centralized_docs.subTitle",
+    previewImg: projectImage.devTo,
+    icons: [icons.react, icons.ts, icons.nodejs],
+    contentTranslation: "projects.centralized_docs.content",
+    repoUrl: "https://dev.to/piotr_pomierski/building-centralized-documentation-across-microservices-with-docusaurus-gitlab-ci-and-typedoc-5a7d",
+    liveUrl: "https://dev.to/piotr_pomierski/building-centralized-documentation-across-microservices-with-docusaurus-gitlab-ci-and-typedoc-5a7d",
+  },
   {
     title: "Weeble",
     subTitleTranslation: "projects.weeble.subTitle",
@@ -56,31 +65,12 @@ const cards = [
     liveUrl: "https://github.com/Pomierski/organize",
   },
   {
-    title: "Marbond.pl",
-    subTitleTranslation: "projects.marbond.subTitle",
-    previewImg: projectImage.marbond,
-    icons: [icons.adobeXD, icons.react],
-    contentTranslation: "projects.marbond.content",
-    repoUrl: "https://github.com/Pomierski/Marbond",
-    liveUrl: "https://marbond.pl/",
-  },
-  {
-    title: "Pomierski.pl",
-    subTitleTranslation: "projects.pomierski.subTitle",
-    previewImg: projectImage.pomierskiBlog,
-    icons: [icons.js, icons.gatsby, icons.graphql],
-    contentTranslation: "projects.pomierski.content",
-    repoUrl: "https://github.com/Pomierski/marcin-pomierski-wiersze",
-  },
-  {
     title: "MyAnimeReminder",
     subTitleTranslation: "projects.myAnimeReminder.subTitle",
     previewImg: projectImage.myAnimeReminder,
     icons: [icons.react, icons.ts],
     contentTranslation: "projects.myAnimeReminder.content",
     repoUrl: "https://github.com/Pomierski/MyAnimeReminder",
-    liveUrl:
-      "https://chrome.google.com/webstore/detail/myanimereminder/ncdghgolehhmfedjdbicgdbedefglbfk",
   },
 ];
 

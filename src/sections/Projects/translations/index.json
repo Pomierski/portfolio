@@ -36,6 +36,10 @@
     "changelog_md": {
       "subTitle": "NodeJS CLI",
       "content": "Narzędzie służące do zarządzania plikiem changelogu w projektach. Biblioteka udostępnia funkcje umożliwiające ustawienie poprawnej wersji zgodnej ze standardem Semantic Versioning (SemVer)."
+    },
+    "centralized_docs": {
+      "subTitle": "Artykuł",
+      "content": "Artykuł o tym, jak zbudowałem scentralizowaną dokumentację dla mikroserwisów przy użyciu Docusaurus, GitLab CI i TypeDoc."
     }
   },
   "en": {
@@ -75,6 +79,10 @@
     "changelog_md": {
       "subTitle": "NodeJS CLI",
       "content": "Tool for maintaining a changelog file for a software project. The library provides functions for setting the correct Semantic Versioning (SemVer) version."
+    },
+    "centralized_docs": {
+      "subTitle": "Article",
+      "content": "Article about how I built centralized documentation for microservices using Docusaurus, GitLab CI, and TypeDoc."
     }
   }
 }
