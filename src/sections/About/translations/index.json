@@ -1,8 +1,11 @@
 {
   "pl": {
     "aboutMe": "O mnie",
-    "bio": "Interesuje się programowaniem od {{years}} lat. Specjalizuje się w tworzeniu logiki oraz stylowaniu UI. Tworzenie świetnie wygladających stron i aplikacji sprawia mi najwięcej satysfakcji. Zawsze dążę do pisania najlepszego kodu i rozwijania się w nowych technologiach. Pogłębiam również wiedzę ze świata backendu, ponieważ pozwala mi to na rozszerzanie funkcjonalości moich projektów.",
+    "bio": "Od {{years}} lat pracuję jako frontend developer. Specjalizuję się w React i TypeScript, ale coraz więcej mojej pracy skupia się na infrastrukturze CI/CD i Developer Experience. Jako maintainer pipeline'ów frontendowych w Shiji, zbudowałem scentralizowaną dokumentację, przeprowadziłem migrację konfiguracji CI, wdrożyłem zbieranie metryk z buildów i aktualnie prowadzę refaktor procesu release'owego.",
     "experience": "Doświadczenie",
+    "positionCurrent": "Frontend Developer & CI Maintainer",
+    "positionJunior": "Junior Frontend Developer (React)",
+    "positionAngular": "Junior Frontend Developer (Angular)",
     "january": "sty",
     "february": "luty",
     "march": "mar",
@@ -16,14 +19,18 @@
     "november": "lis",
     "december": "gru",
     "currently": "obecnie",
-    "months": "{{count}} mieś.",
+    "months_one": "{{count}} mieś.",
+    "months_other": "{{count}} mieś.",
     "year_one": "{{count}} rok",
     "year_other": "{{count}} lat"
   },
   "en": {
     "aboutMe": "About me",
-    "bio": "I've been intrested in programming for {{years}} years.  I specialize in creating logic and UI styling. Developing great looking websites and apps gives me the most satisfaction. I always strive to write the best code and learn new technologies. I also deepen my knowledge of the backend, as it allows me to extend the functionality of my projects.",
+    "bio": "I've been working as a frontend developer for {{years}} years. I specialize in React and TypeScript, but increasingly my work focuses on CI/CD infrastructure and Developer Experience. As the frontend CI maintainer at Shiji, I built centralized documentation across microservices, migrated CI from a global config to per-frontend pipelines, implemented build metrics collection, and am currently leading the transition to release branches with automated releases.",
     "experience": "Experience",
+    "positionCurrent": "Frontend Developer & CI Maintainer",
+    "positionJunior": "Junior Frontend Developer (React)",
+    "positionAngular": "Junior Frontend Developer (Angular)",
     "january": "Jan.",
     "february": "Feb.",
     "march": "Mar.",

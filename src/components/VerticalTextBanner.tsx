@@ -6,30 +6,37 @@ interface PropTypes {
 
 const Wrapper = styled.div`
   display: inline-flex;
-  justify-content: center;
+  justify-content: flex-start;
   flex-direction: column;
   align-items: center;
   text-align: center;
-  width: ${(props) => props.theme.fontSize.lg};
+  width: 1.5rem;
+  flex-shrink: 0;
   height: auto;
-  font-size: ${(props) => props.theme.fontSize.lg};
+  font-family: ${(props) => props.theme.fontFamily.mono};
+  font-size: 1.4rem;
+  font-weight: 700;
   -webkit-text-fill-color: transparent;
   -webkit-text-stroke-width: 1px;
-  -webkit-text-stroke-color: ${(props) => props.theme.color.accent};
+  -webkit-text-stroke-color: ${(props) => props.theme.color.muted};
   word-break: break-all;
-  line-height: ${(props) => props.theme.fontSize.lg};
+  line-height: 1.1;
+  letter-spacing: -0.04em;
   user-select: none;
+  margin-right: 0.25rem;
 
   @media (min-width: ${(props) =>
       props.theme.screenSize.sm}) and (min-height: ${(props) =>
       props.theme.horizontalHeightLimit}) {
-    font-size: ${(props) => props.theme.fontSize.xl};
-    line-height: ${(props) => props.theme.fontSize.xl};
+    font-size: 2.4rem;
+    width: 2.5rem;
+    line-height: 1.05;
+    margin-right: 0.5rem;
   }
 `;
 
 export const VertialTextBanner = ({ text }: PropTypes) => (
-  <Wrapper>
+  <Wrapper aria-hidden="true">
     {text.split("").map((letter, index) => (
       <div key={index}>{letter}</div>
     ))}

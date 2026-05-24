@@ -10,67 +10,41 @@ import { Section } from "../../components/Section";
 import { SectionIds } from "../sectionIds";
 
 const cards = [
-   {
-    title: "Centralized documentation",
+  {
+    title: "GitLab Pipelines Dashboard",
+    subTitleTranslation: "projects.gitlabDashboard.subTitle",
+    previewImg: projectImage.chrome,
+    icons: [icons.astro, icons.react, icons.ts, icons.gitlab],
+    contentTranslation: "projects.gitlabDashboard.content",
+    repoUrl: "https://github.com/Pomierski",
+    liveUrl: "https://github.com/Pomierski",
+  },
+  {
+    title: "Centralized Documentation",
     subTitleTranslation: "projects.centralized_docs.subTitle",
     previewImg: projectImage.devTo,
-    icons: [icons.react, icons.ts, icons.nodejs],
+    icons: [icons.gitlab, icons.ts, icons.nodejs],
     contentTranslation: "projects.centralized_docs.content",
     repoUrl: "https://dev.to/piotr_pomierski/building-centralized-documentation-across-microservices-with-docusaurus-gitlab-ci-and-typedoc-5a7d",
     liveUrl: "https://dev.to/piotr_pomierski/building-centralized-documentation-across-microservices-with-docusaurus-gitlab-ci-and-typedoc-5a7d",
   },
   {
-    title: "Weeble",
-    subTitleTranslation: "projects.weeble.subTitle",
-    previewImg: projectImage.weeble,
-    icons: [icons.react, icons.ts],
-    contentTranslation: "projects.weeble.content",
-    repoUrl: "https://github.com/Pomierski/weeble",
-    liveUrl: "https://pomierski.github.io/weeble/",
-  },
-  {
-    title: "Changlelog.md helper",
+    title: "changelog-md-helper",
     subTitleTranslation: "projects.changelog_md.subTitle",
     previewImg: projectImage.changelogMd,
-    icons: [icons.ts, icons.jest],
+    icons: [icons.ts, icons.jest, icons.nodejs],
     contentTranslation: "projects.changelog_md.content",
     repoUrl: "https://github.com/Pomierski/changelog-md-helper",
     liveUrl: "https://www.npmjs.com/package/changelog-md-helper",
   },
   {
-    title: "SuggestMeAnime",
-    subTitleTranslation: "projects.suggestMeAnime.subTitle",
-    previewImg: projectImage.suggestMeAnime,
-    icons: [icons.react, icons.redux, icons.ts],
-    contentTranslation: "projects.suggestMeAnime.content",
-    repoUrl: "https://github.com/Pomierski/SuggestMeAnime",
-    liveUrl: "https://pomierski.github.io/SuggestMeAnime",
-  },
-  {
     title: "Silver",
     subTitleTranslation: "projects.silver.subTitle",
     previewImg: projectImage.silver,
-    icons: [icons.adobeXD, icons.sass, icons.html5],
+    icons: [icons.html5, icons.sass, icons.js],
     contentTranslation: "projects.silver.content",
     repoUrl: "https://github.com/Pomierski/website-template",
     liveUrl: "https://pomierski.github.io/website-template",
-  },
-  {
-    title: "Organize",
-    subTitleTranslation: "projects.organize.subTitle",
-    previewImg: projectImage.organize,
-    icons: [icons.nodejs, icons.ts],
-    contentTranslation: "projects.organize.content",
-    repoUrl: "https://github.com/Pomierski/organize",
-    liveUrl: "https://github.com/Pomierski/organize",
-  },
-  {
-    title: "MyAnimeReminder",
-    subTitleTranslation: "projects.myAnimeReminder.subTitle",
-    previewImg: projectImage.myAnimeReminder,
-    icons: [icons.react, icons.ts],
-    contentTranslation: "projects.myAnimeReminder.content",
-    repoUrl: "https://github.com/Pomierski/MyAnimeReminder",
   },
 ];
 
@@ -98,7 +72,7 @@ export const Projects = () => {
   const { t } = useTranslation();
   return (
     <Section id={SectionIds.projects} gridCol="1 / 3">
-      <Heading>{t("projects.heading")}</Heading>
+      <Heading stage="05 ─ projects">{t("projects.heading")}</Heading>
       <CardsWrapper>
         {cards.map(
           ({
@@ -138,8 +112,8 @@ export const Projects = () => {
             previewImg,
             icons,
             contentTranslation,
-            repoUrl = "https://github.com/Pomierski?tab=repositories",
-            liveUrl = "https://github.com/Pomierski?tab=repositories",
+            repoUrl,
+            liveUrl,
             subTitleTranslation,
           }) => (
             <Card

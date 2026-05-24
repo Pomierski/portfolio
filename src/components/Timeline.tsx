@@ -13,8 +13,9 @@ interface PropTypes {
 }
 
 const Wrapper = styled.div`
+  font-family: ${(props) => props.theme.fontFamily.mono};
   display: grid;
-  grid-template-columns: 2.5rem 1fr;
+  grid-template-columns: 1.75rem 1fr;
   grid-auto-rows: 1fr;
   grid-auto-flow: row;
   grid-column-gap: 1rem;
@@ -31,48 +32,72 @@ const TextWrapper = styled.div`
   display: grid;
   grid-template-rows: 2.5rem 1fr;
   grid-column: 2;
+  padding-bottom: 1rem;
 `;
 
 const Point = styled.div`
-  border-radius: 100%;
   background: ${(props) => props.theme.color.accent};
-  width: 1.4rem;
-  height: 1.4rem;
+  width: 0.7rem;
+  height: 0.7rem;
+  position: relative;
+
+  &::before {
+    content: "";
+    position: absolute;
+    inset: -3px;
+    border: 1px solid ${(props) => props.theme.color.accent};
+    opacity: 0.3;
+  }
 `;
 
 const Line = styled.div`
-  background: ${(props) => props.theme.color.darkAccentBg};
+  background: ${(props) => props.theme.color.border};
   height: 100%;
-  width: 2px;
+  width: 1px;
 `;
 
 const Title = styled(Text)`
   display: flex;
   align-items: center;
+  font-weight: 700;
+  color: ${(props) => props.theme.color.main};
+  font-size: 0.95rem;
+
+  &::before {
+    content: "▸ ";
+    color: ${(props) => props.theme.color.accent};
+  }
+`;
+
+const Company = styled(Text)`
+  font-family: ${(props) => props.theme.fontFamily.mono};
+  color: ${(props) => props.theme.color.accent};
+  font-size: 0.78rem;
+  letter-spacing: 0.04em;
+  padding: 0.2rem 0;
 `;
 
 const StyledText = styled(Text)`
-  padding: 0.5rem 0;
-  @media (min-width: ${(props) => props.theme.screenSize.sm}) {
-    padding: 0;
-  }
+  padding: 0.2rem 0 0.5rem 0;
+  font-size: 0.78rem;
+  color: ${(props) => props.theme.color.secondary};
 `;
 
 export const Timeline = ({ positions }: PropTypes) => {
   return (
     <Wrapper>
-      {positions.map(({title, company, description}, index) => (
+      {positions.map(({ title, company, description }, index) => (
         <React.Fragment key={index}>
           <TimelineWrapper>
             <Point />
             <Line />
           </TimelineWrapper>
           <TextWrapper>
-            <Title fontSize="sm">{title}</Title>
-            <StyledText fontSize="xs" margin="0">
-              {company}
-            </StyledText>
-            <StyledText color="secondary">{description}</StyledText>
+            <Title>{title}</Title>
+            <div>
+              <Company margin="0">{company}</Company>
+              <StyledText margin="0">{description}</StyledText>
+            </div>
           </TextWrapper>
         </React.Fragment>
       ))}

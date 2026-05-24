@@ -7,6 +7,7 @@ interface PropTypes {
 
 export const Section = styled.section<PropTypes>`
   margin: ${(props) => props.theme.sectionGap} 0;
+  z-index: 1;
 
   @media (min-width: ${(props) => props.theme.screenSize.sm}) {
     grid-column: ${(props) => props.gridCol};

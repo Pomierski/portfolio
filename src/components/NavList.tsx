@@ -16,26 +16,57 @@ export interface NavListItem {
 const List = styled.ul`
   list-style-type: none;
   padding: 0;
+  margin: 0;
+
   @media (min-width: ${(props) => props.theme.screenSize.sm}) {
     margin-left: 1rem;
     display: flex;
+    align-items: center;
     z-index: 99;
-  }
-  @media (min-width: ${(props) => props.theme.screenSize.sm}) {
-    margin-left: 0;
+    gap: 0.25rem;
   }
 `;
 
 const ListItem = styled.li`
-  color: ${(props) => props.theme.color.accent};
-  font-size: 1.5rem;
+  font-family: ${(props) => props.theme.fontFamily.mono};
+  color: ${(props) => props.theme.color.secondary};
+  font-size: 1.25rem;
   padding: 0.25rem 0;
+  text-transform: lowercase;
+  letter-spacing: 0.02em;
+
+  & a {
+    cursor: pointer;
+    transition: color 0.15s ease-out;
+    display: inline-flex;
+    align-items: center;
+    gap: 0.4rem;
+  }
+
+  & a::before {
+    content: "[ ";
+    color: ${(props) => props.theme.color.muted};
+    transition: color 0.15s ease-out;
+  }
+
+  & a::after {
+    content: " ]";
+    color: ${(props) => props.theme.color.muted};
+    transition: color 0.15s ease-out;
+  }
+
+  & a:hover,
+  & a:hover::before,
+  & a:hover::after {
+    color: ${(props) => props.theme.color.accent};
+  }
+
   @media (min-width: ${(props) =>
       props.theme.screenSize.sm}) and (min-height: ${(props) =>
       props.theme.horizontalHeightLimit}) {
-    font-size: 1rem;
-    margin-right: 1rem;
-    cursor: pointer;
+    font-size: 0.85rem;
+    margin: 0;
+    padding: 0;
   }
 `;
 

@@ -1,14 +1,14 @@
 {
   "pl": {
     "heading": "Technologie",
-    "description": "Wykorzystując doświadczenie w wymienionych technologiach staram tworzyć najlepsze i zoptymalizowane rozwiązania. Potrafię szybko analizować kod napisany w oparciu o te technologię i odnaleźć się w złozonych projektach.",
-    "specialization": "Technologiach w których się specjalizuję.",
-    "additional": "Technologie z którymi miałem okazje pracować i wykorzystuję w zalezności od projektu."
+    "description": "Frontend, tooling i infrastruktura CI/CD — technologie z którymi pracuję na co dzień i te, które wykorzystuję w zależności od projektu.",
+    "specialization": "Frontend & CI/CD",
+    "additional": "Backend & Data"
   },
   "en": {
     "heading": "Skills",
-    "description": "Using my experience in the mentioned technologies, I strive to create the best and optimized solutions. I can quickly analyze code written based on these technologies and find my way through complex projects.",
-    "specialization": "The technologies I specialize in.",
-    "additional": "Technologies I have had the opportunity to work with and use depending on the project."
+    "description": "Frontend, tooling, and CI/CD infrastructure — technologies I work with daily and those I reach for depending on the project.",
+    "specialization": "Frontend & CI/CD",
+    "additional": "Backend & Data"
   }
 }
