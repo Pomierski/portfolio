@@ -7,10 +7,17 @@ import { Timeline } from "../../components/Timeline";
 import { getMonthDiffUntillNow } from "../../utils/getMonthsDiffUntillNow";
 
 const Grid = styled.div`
+  width: 100%;
+  min-width: 0;
+
   @media (min-width: ${(props) => props.theme.screenSize.sm}) {
     display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-column-gap: 2rem;
+    grid-template-columns: 1.2fr 1fr;
+    grid-column-gap: 2.5rem;
+
+    & > * {
+      min-width: 0;
+    }
   }
 `;
 
@@ -39,7 +46,9 @@ export const About = () => {
       <Grid>
         <div>
           <Heading stage="01 ─ about">{t("about.aboutMe")}</Heading>
-          <Text>{t("about.bio", { years: currentYear - 2021 })}</Text>
+          <Text>{t("about.bioHook")}</Text>
+          <Text>{t("about.bioEvidence", { years: currentYear - 2021 })}</Text>
+          <Text>{t("about.bioNext")}</Text>
         </div>
         <div>
           <Heading stage="02 ─ experience">{t("about.experience")}</Heading>

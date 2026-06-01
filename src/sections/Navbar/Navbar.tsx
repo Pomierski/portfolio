@@ -1,3 +1,4 @@
+import { useTranslation } from "react-i18next";
 import styled from "styled-components";
 import { Navlist } from "../../components/NavList";
 import { navItems } from "./shared/navItems";
@@ -59,21 +60,39 @@ const Right = styled.div`
   gap: 1rem;
 `;
 
-const Meta = styled.span`
-  font-size: 0.72rem;
-  color: ${(props) => props.theme.color.muted};
+const LangButton = styled.button`
+  font-family: ${(props) => props.theme.fontFamily.mono};
+  font-size: 0.75rem;
+  color: ${(props) => props.theme.color.secondary};
+  background: none;
+  border: 1px solid ${(props) => props.theme.color.border};
+  padding: 0.2rem 0.5rem;
+  cursor: pointer;
   letter-spacing: 0.04em;
+  transition: all 0.15s ease-out;
+
+  &:hover {
+    color: ${(props) => props.theme.color.accent};
+    border-color: ${(props) => props.theme.color.accent};
+  }
 `;
 
-export const Navbar = () => (
-  <Wrapper>
-    <Brand>
-      <StatusDot />
-      <strong>~/portfolio</strong>
-      <Meta>· main · live</Meta>
-    </Brand>
-    <Right>
-      <Navlist items={navItems} />
-    </Right>
-  </Wrapper>
-);
+export const Navbar = () => {
+  const { i18n } = useTranslation();
+  const toggle = () => i18n.changeLanguage(i18n.language === "pl" ? "en" : "pl");
+
+  return (
+    <Wrapper>
+      <Brand>
+        <StatusDot />
+        <strong>~/portfolio</strong>
+      </Brand>
+      <Right>
+        <Navlist items={navItems} />
+        <LangButton onClick={toggle}>
+          {i18n.language === "pl" ? "EN" : "PL"}
+        </LangButton>
+      </Right>
+    </Wrapper>
+  );
+};

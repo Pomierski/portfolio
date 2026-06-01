@@ -1,4 +1,5 @@
 import React, { useEffect, useRef, useState } from "react";
+import { useTranslation } from "react-i18next";
 import { CgMenuGridO } from "react-icons/cg";
 import styled from "styled-components";
 import { Button } from "../../components/Button/Button";
@@ -33,10 +34,13 @@ const AnimatedIcon = styled(CgMenuGridO)<{ $display?: boolean }>`
 export const MobileNav = ({ outsideRef }: PropTypes) => {
   const [display, setDisplay] = useState(false);
   const menuRef = useRef(null);
+  const { i18n } = useTranslation();
 
   const toggleMenu = () => {
     setDisplay(!display);
   };
+
+  const toggleLang = () => i18n.changeLanguage(i18n.language === "pl" ? "en" : "pl");
 
   const hideMenu = (e: MouseEvent) => {
     if (e.target !== menuRef.current) setDisplay(false);
@@ -52,6 +56,9 @@ export const MobileNav = ({ outsideRef }: PropTypes) => {
         <Navlist items={navItems} />
       </MobileMenu>
       <Button noBorder noHover>
+        <span onClick={toggleLang} style={{ fontSize: "0.75rem", cursor: "pointer", marginRight: "0.5rem" }}>
+          {i18n.language === "pl" ? "EN" : "PL"}
+        </span>
         <StyledIcon
           margin="0 -3px 0 auto"
           fontSize="2.5rem"

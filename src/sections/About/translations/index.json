@@ -1,7 +1,9 @@
 {
   "pl": {
     "aboutMe": "O mnie",
-    "bio": "Od {{years}} lat pracuję jako frontend developer. Specjalizuję się w React i TypeScript, ale coraz więcej mojej pracy skupia się na infrastrukturze CI/CD i Developer Experience. Jako maintainer pipeline'ów frontendowych w Shiji, zbudowałem scentralizowaną dokumentację, przeprowadziłem migrację konfiguracji CI, wdrożyłem zbieranie metryk z buildów i aktualnie prowadzę refaktor procesu release'owego.",
+    "bioHook": "Jestem frontend developerem, którego ciągnie do tych części pracy, które większość omija: buildów, pipeline'ów i releasów. Na co dzień tworzę rozwiązania frontendowe i jednocześnie utrzymuję CI, z którego korzystają zespoły frontendowe w Shiji.",
+    "bioEvidence": "Przez {{years}} lat przeszedłem od budowania interfejsów do zarządzania infrastrukturą, która za nimi stoi. Przebudowałem konfiguracje pipeline'ów, pozwalając zespołom frontendowym na automatyzację procesów. Stworzyłem bazę dokumentacji agregującą dokumentację między mikroserwisami. Dodałem i stworzyłem narzędzia do analityki, przez podatności do długości pojedynczych jobów.",
+    "bioNext": "Teraz zgłębiam optymalizację pracy z AI i wykorzystuję ją, żeby uwolnić własną kreatywność w zapewnianiu automatyzacji zadań. Lubię pracować w zespołach, które traktują developer experience jak produkt, a nie obowiązek.",
     "experience": "Doświadczenie",
     "positionCurrent": "Frontend Developer & CI Maintainer",
     "positionJunior": "Junior Frontend Developer (React)",
@@ -26,7 +28,9 @@
   },
   "en": {
     "aboutMe": "About me",
-    "bio": "I've been working as a frontend developer for {{years}} years. I specialize in React and TypeScript, but increasingly my work focuses on CI/CD infrastructure and Developer Experience. As the frontend CI maintainer at Shiji, I built centralized documentation across microservices, migrated CI from a global config to per-frontend pipelines, implemented build metrics collection, and am currently leading the transition to release branches with automated releases.",
+    "bioHook": "I'm a frontend developer drawn to the parts of the job most people skip past: the build, the pipeline, the release. I still write React and TypeScript interfaces every day, and I also maintain the CI that the frontend teams at Shiji depend on. I like being the full package, from component to deployment.",
+    "bioEvidence": "Over {{years}} years I moved from building interfaces to owning the infrastructure underneath them. I split our frontend CI from one shared config into per-project pipelines, built documentation that aggregates automatically across microservices, and added build analytics for bundle size, dependencies, and test coverage.",
+    "bioNext": "Lately I've been digging into AI-assisted workflows (graphify, token economy, rules, agents) and using them to unlock my own creativity rather than replace it. The work I enjoy most is on teams that treat developer experience as a product, not a chore.",
     "experience": "Experience",
     "positionCurrent": "Frontend Developer & CI Maintainer",
     "positionJunior": "Junior Frontend Developer (React)",

@@ -1,14 +1,14 @@
 {
   "pl": {
     "heading": "Technologie",
-    "description": "Frontend, tooling i infrastruktura CI/CD — technologie z którymi pracuję na co dzień i te, które wykorzystuję w zależności od projektu.",
-    "specialization": "Frontend & CI/CD",
-    "additional": "Backend & Data"
+    "description": "Codzienny zestaw do budowania interfejsów i pipeline'ów, które je wdrażają, oraz narzędzia backendowe, po które sięgam, gdy projekt tego wymaga.",
+    "specialization": "Na co dzień",
+    "additional": "Gdy projekt tego wymaga"
   },
   "en": {
     "heading": "Skills",
-    "description": "Frontend, tooling, and CI/CD infrastructure — technologies I work with daily and those I reach for depending on the project.",
-    "specialization": "Frontend & CI/CD",
-    "additional": "Backend & Data"
+    "description": "My daily kit for building interfaces and the pipelines that ship them, plus the backend and data tools I reach for when a project calls for them.",
+    "specialization": "Day to day",
+    "additional": "When the project calls for it"
   }
 }
