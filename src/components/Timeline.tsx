@@ -66,6 +66,7 @@ const Title = styled(Text)`
   &::before {
     content: "▸ ";
     color: ${(props) => props.theme.color.accent};
+    margin-right: 0.25rem;
   }
 `;
 

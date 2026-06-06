@@ -19,7 +19,7 @@ export const MainHeading = styled.h1`
   word-break: break-word;
 
   &::before {
-    content: "▸ ";
+    content: "▸";
     color: ${(props) => props.theme.color.accent};
   }
 
