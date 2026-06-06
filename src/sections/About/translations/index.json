@@ -1,7 +1,7 @@
 {
   "pl": {
     "aboutMe": "O mnie",
-    "bioHook": "Jestem frontend developerem, którego ciągnie do tych części pracy, które większość omija: buildów, pipeline'ów i releasów. Na co dzień tworzę rozwiązania frontendowe i jednocześnie utrzymuję CI, z którego korzystają zespoły frontendowe w Shiji.",
+    "bioHook": "Jestem frontend developerem, którego ciągnie do buildów, pipeline'ów i releasów. Na co dzień tworzę rozwiązania frontendowe i jednocześnie utrzymuję CI, z którego korzystają zespoły frontendowe w Shiji.",
     "bioEvidence": "Przez {{years}} lat przeszedłem od budowania interfejsów do zarządzania infrastrukturą, która za nimi stoi. Przebudowałem konfiguracje pipeline'ów, pozwalając zespołom frontendowym na automatyzację procesów. Stworzyłem bazę dokumentacji agregującą dokumentację między mikroserwisami. Dodałem i stworzyłem narzędzia do analityki, przez podatności do długości pojedynczych jobów.",
     "bioNext": "Teraz zgłębiam optymalizację pracy z AI i wykorzystuję ją, żeby uwolnić własną kreatywność w zapewnianiu automatyzacji zadań. Lubię pracować w zespołach, które traktują developer experience jak produkt, a nie obowiązek.",
     "experience": "Doświadczenie",

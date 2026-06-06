@@ -13,6 +13,10 @@
       "subTitle": "NodeJS CLI / npm package",
       "content": "Narzędzie CLI do zarządzania plikiem CHANGELOG.md. Automatyczne wersjonowanie zgodne z SemVer, parsowanie i aktualizacja wpisów."
     },
+    "intellistore": {
+      "subTitle": "npm package / TypeScript",
+      "content": "Typesafe'owy state management z auto-generowanymi setterami. Podajesz obiekt, dostajesz w pełni typowane metody setX dla każdego klucza. Zero zależności, subscriptions, extension API."
+    },
     "silver": {
       "subTitle": "Strona wizytówka",
       "content": "Szablon strony WWW. Stworzony przy użyciu własnego projektu. Napisany w HTMLu z użyciem SCSS i Parcel.js jako bundler."
@@ -31,6 +35,10 @@
     "changelog_md": {
       "subTitle": "NodeJS CLI / npm package",
       "content": "CLI tool for maintaining CHANGELOG.md files. Automated SemVer-compliant versioning, entry parsing and updates."
+    },
+    "intellistore": {
+      "subTitle": "npm package / TypeScript",
+      "content": "Type-safe state management with auto-generated setters. Hand it an object, get fully typed setX methods for every key. Zero dependencies, subscriptions, composable extension API."
     },
     "silver": {
       "subTitle": "Website template",

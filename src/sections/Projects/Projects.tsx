@@ -1,6 +1,5 @@
 import { useTranslation } from "react-i18next";
 import { Carousel } from "react-responsive-carousel";
-import "react-responsive-carousel/lib/styles/carousel.min.css";
 import styled from "styled-components";
 import { icons } from "../../assets/icons";
 import { projectImage } from "../../assets/projectImage";
@@ -9,15 +8,26 @@ import { Heading } from "../../components/Heading/Heading";
 import { Section } from "../../components/Section";
 import { SectionIds } from "../sectionIds";
 
+import "react-responsive-carousel/lib/styles/carousel.min.css";
+
 const cards = [
   {
     title: "GitLab Pipelines Dashboard",
     subTitleTranslation: "projects.gitlabDashboard.subTitle",
-    previewImg: projectImage.chrome,
+    previewImg: projectImage.devEx,
     icons: [icons.astro, icons.react, icons.ts, icons.gitlab],
     contentTranslation: "projects.gitlabDashboard.content",
-    repoUrl: "https://github.com/Pomierski",
-    liveUrl: "https://github.com/Pomierski",
+    repoUrl: "https://github.com/Pomierski/gitlab-devex-dashboard",
+    liveUrl: "https://gitlab-devex-dashboard.vercel.app/",
+  },
+    {
+    title: "Intellistore",
+    subTitleTranslation: "projects.intellistore.subTitle",
+    previewImg: projectImage.intellistore,
+    icons: [icons.ts],
+    contentTranslation: "projects.intellistore.content",
+    repoUrl: "https://github.com/Pomierski/intellistore",
+    liveUrl: "https://www.npmjs.com/package/intellistore",
   },
   {
     title: "Centralized Documentation",
