@@ -2,7 +2,7 @@
   "pl": {
     "aboutMe": "O mnie",
     "bioHook": "Jestem frontend developerem, którego ciągnie do buildów, pipeline'ów i releasów. Na co dzień tworzę rozwiązania frontendowe i jednocześnie utrzymuję CI, z którego korzystają zespoły frontendowe w Shiji.",
-    "bioEvidence": "Przez {{years}} lat przeszedłem od budowania interfejsów do zarządzania infrastrukturą, która za nimi stoi. Przebudowałem konfiguracje pipeline'ów, pozwalając zespołom frontendowym na automatyzację procesów. Stworzyłem bazę dokumentacji agregującą dokumentację między mikroserwisami. Dodałem i stworzyłem narzędzia do analityki, przez podatności do długości pojedynczych jobów.",
+    "bioEvidence": "Przez {{years}} lat przeszedłem od budowania interfejsów do zarządzania developer experience wokół nich. Utrzymuję scentralizowaną konfigurację CI, przez którą releasuje cała firma, więc pojedyncza optymalizacja skaluje się na ponad 90 zależnych od siebie mikroserwisów. Stworzyłem bazę dokumentacji agregującą dokumentację między nimi oraz narzędzia do analityki - od rozmiaru bundla i zależności po pokrycie testami.",
     "bioNext": "Teraz zgłębiam optymalizację pracy z AI i wykorzystuję ją, żeby uwolnić własną kreatywność w zapewnianiu automatyzacji zadań. Lubię pracować w zespołach, które traktują developer experience jak produkt, a nie obowiązek.",
     "experience": "Doświadczenie",
     "positionCurrent": "Frontend Developer & CI Maintainer",
@@ -29,7 +29,7 @@
   "en": {
     "aboutMe": "About me",
     "bioHook": "I'm a frontend developer drawn to the parts of the job most people skip past: the build, the pipeline, the release. I still write React and TypeScript interfaces every day, and I also maintain the CI that the frontend teams at Shiji depend on. I like being the full package, from component to deployment.",
-    "bioEvidence": "Over {{years}} years I moved from building interfaces to owning the infrastructure underneath them. I split our frontend CI from one shared config into per-project pipelines, built documentation that aggregates automatically across microservices, and added build analytics for bundle size, dependencies, and test coverage.",
+    "bioEvidence": "Over {{years}} years I moved from building interfaces to owning the developer experience around them. I maintain the company's centralized CI configuration that every team releases through, so a single optimization compounds across more than 90 interdependent microservices. I built documentation that aggregates automatically across them, and added build analytics for bundle size, dependencies, and test coverage.",
     "bioNext": "Lately I've been digging into AI-assisted workflows (graphify, token economy, rules, agents) and using them to unlock my own creativity rather than replace it. The work I enjoy most is on teams that treat developer experience as a product, not a chore.",
     "experience": "Experience",
     "positionCurrent": "Frontend Developer & CI Maintainer",
