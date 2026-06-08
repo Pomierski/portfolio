@@ -1,14 +1,14 @@
 {
   "pl": {
     "heading": "Technologie",
-    "description": "Wykorzystując doświadczenie w wymienionych technologiach staram tworzyć najlepsze i zoptymalizowane rozwiązania. Potrafię szybko analizować kod napisany w oparciu o te technologię i odnaleźć się w złozonych projektach.",
-    "specialization": "Technologiach w których się specjalizuję.",
-    "additional": "Technologie z którymi miałem okazje pracować i wykorzystuję w zalezności od projektu."
+    "description": "Codzienny zestaw do budowania interfejsów i pipeline'ów, które je wdrażają, oraz narzędzia backendowe, po które sięgam, gdy projekt tego wymaga.",
+    "specialization": "W codziennej pracy",
+    "additional": "Gdy projekt tego wymaga"
   },
   "en": {
     "heading": "Skills",
-    "description": "Using my experience in the mentioned technologies, I strive to create the best and optimized solutions. I can quickly analyze code written based on these technologies and find my way through complex projects.",
-    "specialization": "The technologies I specialize in.",
-    "additional": "Technologies I have had the opportunity to work with and use depending on the project."
+    "description": "My daily kit for building interfaces and the pipelines that ship them, plus the backend and data tools I reach for when a project calls for them.",
+    "specialization": "Day to day",
+    "additional": "When the project calls for it"
   }
 }

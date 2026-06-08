@@ -2,7 +2,7 @@ import { theme } from "../../styles/theme";
 import { render, screen } from "../../tests/test-utils";
 import { Button } from "./Button";
 
-describe("<Heading />", () => {
+describe("<Button />", () => {
   it("renders fill variant correctly", () => {
     render(
       <Button fill={true} href="#">
@@ -22,8 +22,8 @@ describe("<Heading />", () => {
     );
 
     expect(screen.getByRole("link")).toHaveStyle({
-      borderColor: theme.color.secondary,
-      color: theme.color.secondary,
+      borderColor: theme.color.muted,
+      color: theme.color.muted,
     });
   });
   it("renders center variant correctly", () => {

@@ -1,10 +1,25 @@
 import { useTranslation } from "react-i18next";
-import { Container } from "../../components/Container";
+import styled from "styled-components";
 import { Heading } from "../../components/Heading/Heading";
 import { Section } from "../../components/Section";
 import { Text } from "../../components/Text/Text";
 import { Timeline } from "../../components/Timeline";
 import { getMonthDiffUntillNow } from "../../utils/getMonthsDiffUntillNow";
+
+const Grid = styled.div`
+  width: 100%;
+  min-width: 0;
+
+  @media (min-width: ${(props) => props.theme.screenSize.sm}) {
+    display: grid;
+    grid-template-columns: 1.2fr 1fr;
+    grid-column-gap: 2.5rem;
+
+    & > * {
+      min-width: 0;
+    }
+  }
+`;
 
 const currentYear = new Date().getFullYear();
 
@@ -28,17 +43,19 @@ export const About = () => {
 
   return (
     <Section id="about" gridCol="1 / 3">
-      <Container>
+      <Grid>
         <div>
-          <Heading>{t("about.aboutMe")}</Heading>
-          <Text>{t("about.bio", { years: currentYear - 2016 })}</Text>
+          <Heading stage="01 ─ about">{t("about.aboutMe")}</Heading>
+          <Text>{t("about.bioHook")}</Text>
+          <Text>{t("about.bioEvidence", { years: currentYear - 2021 })}</Text>
+          <Text>{t("about.bioNext")}</Text>
         </div>
         <div>
-          <Heading>{t("about.experience")}</Heading>
+          <Heading stage="02 ─ experience">{t("about.experience")}</Heading>
           <Timeline
             positions={[
               {
-                title: "Frontend developer (React)",
+                title: t("about.positionCurrent"),
                 description: `${t("about.july")} 2023 - ${t(
                   "about.currently"
                 )} · ${getCurrentPositionEmploymentTime(
@@ -47,32 +64,25 @@ export const About = () => {
                 company: "Shiji Poland",
               },
               {
-                title: "Junior frontend developer (React)",
+                title: t("about.positionJunior"),
                 description: `${t("about.april")} 2022 - ${t(
                   "about.june"
-                )} 2021 · ${t("about.year", { count: 1 })} ${t("about.months", {
-                  count: 4,
+                )} 2023 · ${t("about.year", { count: 1 })} ${t("about.months", {
+                  count: 3,
                 })}`,
                 company: "Shiji Poland",
               },
               {
-                title: "Junior frontend developer (Angular)",
+                title: t("about.positionAngular"),
                 description: `${t("about.september")} 2021 - ${t(
-                  "about.december"
-                )} 2021 · ${t("about.months", { count: 4 })}`,
-                company: "Tom&Co",
-              },
-              {
-                title: "Staż Junior frontend developer (Angular)",
-                description: `${t("about.october")} 2021 - ${t(
-                  "about.september"
-                )} 2021 · ${t("about.months", { count: 1 })}`,
+                  "about.march"
+                )} 2022 · ${t("about.months", { count: 7 })}`,
                 company: "Tom&Co",
               },
             ]}
           />
         </div>
-      </Container>
+      </Grid>
     </Section>
   );
 };

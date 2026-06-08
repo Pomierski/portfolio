@@ -19,16 +19,35 @@ const Wrapper = styled.div`
   display: flex;
   flex-direction: column;
   width: 18rem;
-  background: ${(props) => props.theme.color.darkBg};
-  padding: 1rem;
-  border-radius: 1rem;
-  box-shadow: ${(props) => props.theme.boxShadow.default};
+  background: ${(props) => props.theme.color.panel};
+  padding: 1rem 1.25rem;
+  border: 1px solid ${(props) => props.theme.color.border};
+  font-family: ${(props) => props.theme.fontFamily.mono};
+  transition: all 0.15s ease-out;
+
+  &:hover {
+    border-color: ${(props) => props.theme.color.accent};
+    box-shadow: 4px 4px 0 0 ${(props) => props.theme.color.darkAccent};
+    transform: translate(-2px, -2px);
+  }
 `;
 
 const HeaderWrapper = styled.div`
   display: flex;
   justify-content: space-between;
   align-items: center;
+
+  & p::before {
+    content: "▸ ";
+    color: ${(props) => props.theme.color.accent};
+  }
+`;
+
+const Stars = styled(Text)`
+  &::before {
+    content: "★ ";
+    color: ${(props) => props.theme.color.warning};
+  }
 `;
 
 const numberFormat = new Intl.NumberFormat("en-US");
@@ -49,16 +68,16 @@ export const Contribution = ({
           <Text margin="0" fontSize="sm">
             {repoName}
           </Text>
-          <StyledIcon>
+          <StyledIcon color="#8a8a8a">
             <BiLinkExternal />
           </StyledIcon>
         </HeaderWrapper>
       </TransparentLink>
-      <Text color="secondary" margin="0" fontSize="xs">
-        / {repoAuthor}
+      <Text color="muted" margin="0" fontSize="xs">
+        @ {repoAuthor}
       </Text>
-      <Text>{numberFormat.format(stars)}+⭐</Text>
-      <Text color="secondary" margin="0.5rem 0 0 0">
+      <Stars margin="0.5rem 0 0 0">{numberFormat.format(stars)}</Stars>
+      <Text color="secondary" margin="0.25rem 0 0 0" fontSize="xs">
         {t("contributions.contributions", { count: contibutionsAmount })}
       </Text>
     </Wrapper>

@@ -11,13 +11,13 @@ describe("<Heading />", () => {
   it("should have different color if color prop is provided", () => {
     const { rerender } = render(<Heading>Heading text</Heading>);
     expect(screen.getByText("Heading text")).toHaveStyle({
-      color: theme.color.accent,
+      color: theme.color.main,
     });
 
-    rerender(<Heading color="main">Heading text</Heading>);
+    rerender(<Heading color="accent">Heading text</Heading>);
 
     expect(screen.getByText("Heading text")).toHaveStyle({
-      color: "#ffffff",
+      color: theme.color.accent,
     });
   });
 });
